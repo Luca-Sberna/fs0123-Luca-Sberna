@@ -2,6 +2,7 @@ header {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 header a {
@@ -54,7 +55,7 @@ nav {
 
 
 
-#logo img {
+.logo img {
   width: 16rem;
   padding: 0.5rem;
   cursor: pointer;
@@ -112,12 +113,25 @@ table td {
 
 
 
-
-
+#sotto-tab {
+  align-items: center;
+  text-align: center;
+}
 
 #link-esterno {
   text-decoration: none;
 }
+
+#video {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+
+
+
+
 
 aside p {
   text-align: center;
@@ -129,24 +143,9 @@ aside form {
 
 
 
-
-
-
 #art1 {
   width: 33%;
   height: 5rem;
-}
-
-#art1 p {
-  margin: 0;
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-#art1 h5 {
-  margin: 0;
-  text-align: center;
-  font-size: 1.5rem;
 }
 
 #art2 {
@@ -154,30 +153,18 @@ aside form {
   height: 5rem;
 }
 
-#art2 p {
-  margin: 0;
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-#art2 h5 {
-  margin: 0;
-  text-align: center;
-  font-size: 1.5rem;
-}
-
 #art3 {
   width: 33%;
   height: 5rem;
 }
 
-#art3 p {
+#articles p {
   margin: 0;
   text-align: center;
   font-size: 1.1rem;
 }
 
-#art3 h5 {
+#articles h5 {
   margin: 0;
   text-align: center;
   font-size: 1.5rem;
@@ -189,14 +176,22 @@ aside form {
   width: 100%;
 }
 
-#video {
-  display: flex;
-  margin-top: 1rem;
-}
 
 
 
 
 #ftr {
   text-align: center;
+}
+
+#ftr p {
+
+  margin: 0;
+
+}
+
+#ftr h6 {
+  text-align: center;
+  margin: 0;
+  padding-top: 28px;
 }
