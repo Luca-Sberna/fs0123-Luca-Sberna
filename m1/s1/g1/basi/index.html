@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- titolo documento - 'Brand' -->
-    <title>Document</title>
+    <title>teoria g1</title>
 </head>
 
 <body>
@@ -105,8 +105,8 @@
 
     <table>
         <caption><!-- intestazione --></caption>
-        <tr><!-- intestazione -->
-            <th><!-- colonna -->
+        <tr><!-- righe -->
+            <th><!-- intestazioni colonna -->
             <td><!-- cella dati -->
 
             </td>
@@ -114,29 +114,37 @@
         </tr>
     </table>
 
-    <!-- altro esempio più colspan=n' colonne da occupare -->
-    <!-- rowspan=n' righe da occupare -->
+    <!-- altro esempio più colspan=num. colonne create da occupare -->
+    <!-- rowspan=num. righe da occupare -->
     <!-- Thead=intestazione tabella,Tbody=corpo tab,Tfoot=ftr della tab -->
     <table>
-        <tr>
-            <td>Nome</td>
-            <td>Anno</td>
-            <td>Presenze</td>
-        </tr>
-        <tr>
-            <td>Luca</td>
-            <td>2021</td>
-            <td>30</td>
-        </tr>
-        <tr>
-            <td>Maria</td>
-            <td>2021</td>
-            <td>27</td>
-        </tr>
-        <tr>
-            <td colspan="4">Media annua</td>
-            <td>27,66</td>
-        </tr>
+        <caption>Valutazioni</caption>
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Anno</td>
+                <td>Presenze</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Luca</td>
+                <td>2021</td>
+                <td>30</td>
+            </tr>
+
+            <tr>
+                <td>Maria</td>
+                <td>2021</td>
+                <td>27</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Media annua</td>
+                <td>27,66</td>
+            </tr>
+        </tfoot>
     </table>
 
 
