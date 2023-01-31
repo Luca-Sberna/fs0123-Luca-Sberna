@@ -9,11 +9,11 @@ header a {
 header h1 {
   display: flex;
   text-align: center;
-  margin-left: 4rem;
   margin: 0;
   align-items: center;
   font-size: 3rem;
   color: red;
+  padding-left: 7rem;
 }
 .bicolor-title {
   color: rgb(12, 214, 214);
@@ -34,7 +34,7 @@ nav {
   padding: 1rem;
   display: flex;
   justify-content: right;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 #logo img {
   width: 16rem;
@@ -72,6 +72,9 @@ table th {
 }
 table td {
   border: 1px solid black;
+}
+#link-esterno {
+  text-decoration: none;
 }
 aside p {
   text-align: center;
