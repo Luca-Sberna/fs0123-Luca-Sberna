@@ -15,13 +15,13 @@
             <img src="img/logo.svg" alt="logo">
         </div>
 
-        <h1>Il blog dei developers</h1>
+        <h1> <span class="color-title"> Il </span> blog <span class="color-title"> dei </span> developers </h1>
 
         <nav>
             <div>
-                <a href="#">Home</a>
-                <a href="#">Articoli</a>
-                <a href="#">Job</a>
+                <a href="#logo">Home</a>
+                <a href="#articles">Articoli</a>
+                <a href="#ftr">Job</a>
             </div>
         </nav>
     </header>
@@ -30,21 +30,23 @@
 
     <main>
         <article>
+
             <h2>Come creare un template per i post</h2>
             <p class="autore">di Mario Rossi - pubblicato il 25-10-2020</p>
 
             <p>La prima cosa da fare è suddividere in blocchi logici la pagina,identificando le parti comuni da
                 applicare a tutte le pagine. </p>
 
-            <p>Le varie aree saranno quindi suddivise in:</p>
+            <p class="p1">Le varie aree saranno quindi suddivise in:</p>
             <ul>
                 <li>Contenuti di intestazione del tag </li>
-                <li>Contenuti centrali variabili del tag</li>
-                <li>Contenuti di fine pagina comuni,da inserire nel tag</li>
+                <li>Contenuti centrali variabili del tag (corpo principale)</li>
+                <li>Contenuti di fine pagina comuni,da inserire nel tag </li>
                 <li>Formattazione del codice</li>
             </ul>
 
-            <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i
+            <p class="p1">Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare
+                con i
                 CSS.Perciò i passi saranno: </p>
             <ul>
                 <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
@@ -55,7 +57,9 @@
             </ul>
 
             <table>
-                <caption id="title-tab">Diffusione dei CSS</caption>
+                <caption id="title-tab">
+                    <h3>Diffusione dei CSS</h3>
+                </caption>
                 <thead>
                     <tr>
                         <th>Anno</th>
@@ -91,7 +95,8 @@
                     </tr>
                 </tbody>
             </table>
-            <p class="ptab">Un test di validazione potrà essere fatto tramite il tool online -LINK ESTERNO- dedicato
+
+            <p>Un test di validazione potrà essere fatto tramite il tool online -LINK ESTERNO- dedicato
                 allo scopo.Una
                 volta ottimizzato il tutto,avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come
                 loro:
@@ -99,21 +104,51 @@
             </p>
 
         </article>
-
     </main>
+
+    <hr>
+
     <aside>
+        <div id="newsletter">
+            <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+            <form>
+                <input type="email" name="email" placeholder="inserisci l'email">
+                <button type="submit" value="invia dati">Iscriviti!</button>
+            </form>
+        </div>
+        <hr>
 
+        <div id="articles">
+            <article id="art1">
 
+                <h5>Articoli correlati</h5>
+                <p>Validare il codice HTML<br>
+                    Categoria: develop<br>
+                    Data: 19-9-2020</p>
+
+            </article>
+            <article id="art2">
+                <h5>Correggere la sintassi</h5>
+                <p>Categoria: develop<br>
+                    Data: 16-9-2020</p>
+
+            </article>
+            <article id="art3">
+                <h5>Meno Kb nella pagina</h5>
+                <p>Categoria: ottimizzazione<br>
+                    Data: 30-9-2020</p>
+
+            </article>
+        </div>
 
     </aside>
 
     <hr>
 
-    <footer>
-        Blog Epicode &copy;
-
-        testata online di Mario Rossi,registrata con prot.n213/2018 -via Luigi Einaudi 2-Milano.P.IVA 00112233
-
+    <footer id="ftr">
+        <p>Blog Epicode &copy;</p>
+        <p> Testata online di Mario Rossi,registrata con prot.n213/2018 -via Luigi Einaudi 2-Milano.P.IVA 00112233.</p>
+        <address>info@epicode.school -LINK EMAIL-</address>
     </footer>
 
 </body>

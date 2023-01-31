@@ -10,38 +10,107 @@ header h1 {
   display: flex;
   text-align: center;
   margin-left: 4rem;
+  margin: 0;
+  align-items: center;
+  font-size: 3rem;
+  color: red;
+}
+.color-title {
+  color: rgb(12, 214, 214);
+  padding: 0.8rem;
 }
 nav {
   align-items: center;
   width: 20%;
   padding: 1rem;
   display: flex;
-  justify-content: right;
+  justify-content: center;
 }
 #logo img {
   width: 16rem;
   padding: 0.5rem;
+  cursor: pointer;
 }
 main h2 {
   margin: 0;
+  text-align: center;
+  font-size: 1.8rem;
 }
 .autore {
   margin: 0;
   margin-top: 1px;
+  text-align: right;
+  font-size: 10px;
 }
-.ptab {
-  margin: 0;
+.p1 {
+  margin-bottom: 0;
+  padding-bottom: 1px;
 }
+
 #title-tab {
 }
 table {
   text-align: center;
   width: 50%;
   border: 1px solid black;
+  margin: 0 auto;
 }
 table th {
   border: 1px solid black;
 }
 table td {
   border: 1px solid black;
+}
+aside p {
+  text-align: center;
+}
+aside form {
+  text-align: center;
+}
+#art1 {
+  width: 33%;
+  height: 5rem;
+}
+#art1 p {
+  margin: 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+#art1 h5 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#art2 {
+  width: 33%;
+  height: 5rem;
+}
+#art2 p {
+  margin: 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+#art2 h5 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#art3 {
+  width: 33%;
+  height: 5rem;
+}
+#art3 p {
+  margin: 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+#art3 h5 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#articles {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
