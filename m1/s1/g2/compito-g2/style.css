@@ -15,16 +15,26 @@ header h1 {
   font-size: 3rem;
   color: red;
 }
-.color-title {
+.bicolor-title {
   color: rgb(12, 214, 214);
   padding: 0.8rem;
+}
+.home {
+  color: aqua;
+}
+.articoli {
+  color: red;
+}
+.job {
+  color: aqua;
 }
 nav {
   align-items: center;
   width: 20%;
   padding: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  font-size: 1.8rem;
 }
 #logo img {
   width: 16rem;
@@ -54,6 +64,8 @@ table {
   width: 50%;
   border: 1px solid black;
   margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 3rem;
 }
 table th {
   border: 1px solid black;
@@ -113,4 +125,11 @@ aside form {
   display: flex;
   align-items: center;
   width: 100%;
+}
+#video {
+  display: flex;
+  margin-top: 1rem;
+}
+#ftr {
+  text-align: center;
 }

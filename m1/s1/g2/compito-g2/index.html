@@ -12,16 +12,16 @@
 <body>
     <header>
         <div id="logo">
-            <img src="img/logo.svg" alt="logo">
+            <a href="#logo"><img src="img/logo.svg" alt="logo"></a>
         </div>
 
-        <h1> <span class="color-title"> Il </span> blog <span class="color-title"> dei </span> developers </h1>
+        <h1> <span class="bicolor-title"> Il </span> blog <span class="bicolor-title"> dei </span> developers </h1>
 
         <nav>
             <div>
-                <a href="#logo">Home</a>
-                <a href="#articles">Articoli</a>
-                <a href="#ftr">Job</a>
+                <a class="home" href="#logo">Home</a>
+                <a class="articoli" href="#articles">Articoli</a>
+                <a class="job" href="#ftr">Job</a>
             </div>
         </nav>
     </header>
@@ -39,9 +39,11 @@
 
             <p class="p1">Le varie aree saranno quindi suddivise in:</p>
             <ul>
-                <li>Contenuti di intestazione del tag </li>
-                <li>Contenuti centrali variabili del tag (corpo principale)</li>
-                <li>Contenuti di fine pagina comuni,da inserire nel tag </li>
+                <li>Contenuti di intestazione del tag < header>
+                </li>
+                <li>Contenuti centrali variabili del tag < main>(corpo principale)</li>
+                <li>Contenuti di fine pagina comuni,da inserire nel tag < footer>
+                </li>
                 <li>Formattazione del codice</li>
             </ul>
 
@@ -96,11 +98,15 @@
                 </tbody>
             </table>
 
-            <p>Un test di validazione potrà essere fatto tramite il tool online -LINK ESTERNO- dedicato
-                allo scopo.Una
-                volta ottimizzato il tutto,avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come
+            <p>Un test di validazione potrà essere fatto tramite il tool online <a href="#" target="_blank">-LINK
+                    ESTERNO-</a> dedicato
+                allo scopo.
+                Una volta ottimizzato il tutto,avremo raggiunto il nostro obiettivo ed essere stati dei veri developers
+                come
                 loro:
-                -INSERIRE VIDEO YOUTUBE-
+                <iframe id="video"
+                    src="https://www.bing.com/videos/search?q=&docid=608021572743294310&mid=115AA014771DD22405EF115AA014771DD22405EF&view=detail&FORM=VIRE"
+                    frameborder="2" width="500" height="350"></iframe>
             </p>
 
         </article>
@@ -116,6 +122,7 @@
                 <button type="submit" value="invia dati">Iscriviti!</button>
             </form>
         </div>
+
         <hr>
 
         <div id="articles">
@@ -148,7 +155,7 @@
     <footer id="ftr">
         <p>Blog Epicode &copy;</p>
         <p> Testata online di Mario Rossi,registrata con prot.n213/2018 -via Luigi Einaudi 2-Milano.P.IVA 00112233.</p>
-        <address>info@epicode.school -LINK EMAIL-</address>
+        <address> <a href="mailto:info@epicode.school" target="_blank"> info@epicode.school </a></address>
     </footer>
 
 </body>
