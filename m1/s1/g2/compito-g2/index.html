@@ -2,13 +2,119 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>compito g2</title>
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
 </head>
 
 <body>
+    <header>
+        <div id="logo">
+            <img src="img/logo.svg" alt="logo">
+        </div>
+
+        <h1>Il blog dei developers</h1>
+
+        <nav>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">Articoli</a>
+                <a href="#">Job</a>
+            </div>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <article>
+            <h2>Come creare un template per i post</h2>
+            <p class="autore">di Mario Rossi - pubblicato il 25-10-2020</p>
+
+            <p>La prima cosa da fare è suddividere in blocchi logici la pagina,identificando le parti comuni da
+                applicare a tutte le pagine. </p>
+
+            <p>Le varie aree saranno quindi suddivise in:</p>
+            <ul>
+                <li>Contenuti di intestazione del tag </li>
+                <li>Contenuti centrali variabili del tag</li>
+                <li>Contenuti di fine pagina comuni,da inserire nel tag</li>
+                <li>Formattazione del codice</li>
+            </ul>
+
+            <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i
+                CSS.Perciò i passi saranno: </p>
+            <ul>
+                <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
+                <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+                <li>Applicare gli stili CSS</li>
+                <li>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè totale
+                </li>
+            </ul>
+
+            <table>
+                <caption id="title-tab">Diffusione dei CSS</caption>
+                <thead>
+                    <tr>
+                        <th>Anno</th>
+                        <th>% di utilizzo</th>
+                        <th>Supporto browsers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>2000</th>
+                        <th>20%</th>
+                        <th>17%</th>
+                    </tr>
+                    <tr>
+                        <th>2002</th>
+                        <th>35%</th>
+                        <th>22%</th>
+                    </tr>
+                    <tr>
+                        <th>2004</th>
+                        <th>45%</th>
+                        <th>42%</th>
+                    </tr>
+                    <tr>
+                        <th>2008</th>
+                        <th>80%</th>
+                        <th>51%</th>
+                    </tr>
+                    <tr>
+                        <th>2012</th>
+                        <th>100%</th>
+                        <th>76%</th>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="ptab">Un test di validazione potrà essere fatto tramite il tool online -LINK ESTERNO- dedicato
+                allo scopo.Una
+                volta ottimizzato il tutto,avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come
+                loro:
+                -INSERIRE VIDEO YOUTUBE-
+            </p>
+
+        </article>
+
+    </main>
+    <aside>
+
+
+
+    </aside>
+
+    <hr>
+
+    <footer>
+        Blog Epicode &copy;
+
+        testata online di Mario Rossi,registrata con prot.n213/2018 -via Luigi Einaudi 2-Milano.P.IVA 00112233
+
+    </footer>
 
 </body>
 

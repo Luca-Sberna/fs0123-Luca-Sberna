@@ -53,7 +53,7 @@
     </ul>
 
 
-
+    <!-- <hr> = separatore -->
     <address></address>
     <!-- qui vendono indicate inforamzioni di carattere anagrafico (contatti,indirizzi,riferimenti ecc) -->
 
@@ -105,25 +105,26 @@
 
     <table>
         <caption><!-- intestazione --></caption>
-        <tr><!-- righe -->
-            <th><!-- intestazioni colonna -->
+        <tr><!-- righe orizzontali-->
+            <th><!-- intestazioni colonna orizzontali -->
             <td><!-- cella dati -->
 
             </td>
             </th>
         </tr>
     </table>
+    <!-- tr>td*3{text}  crezione veloce con testo interno -->
+    <!-- altro esempio più colspan=num. celle create da occupare orizzontalmente-->
+    <!-- rowspan=num. righe da occupare in altezza-->
+    <!-- Thead=intestazione tabella,Tbody=corpo tab con i dati,Tfoot=ftr della tab con info conclusive tipo il totale -->
 
-    <!-- altro esempio più colspan=num. colonne create da occupare -->
-    <!-- rowspan=num. righe da occupare -->
-    <!-- Thead=intestazione tabella,Tbody=corpo tab,Tfoot=ftr della tab -->
     <table>
-        <caption>Valutazioni</caption>
+        <caption>Valutazioni</caption><!-- titolo tabella -->
         <thead>
             <tr>
-                <td>Nome</td>
-                <td>Anno</td>
-                <td>Presenze</td>
+                <th>Nome</th>
+                <th>Anno</th>
+                <th>Presenze</th>
             </tr>
         </thead>
         <tbody>
@@ -147,7 +148,8 @@
         </tfoot>
     </table>
 
-
+    <!-- in css ,table{width: 100% ,text-align: center;} -->larghezza e centralità del testo
+    <!-- in css , table th , table td {border: 1px solid (nero=#000);} --> per dare un bordo alla tabella
 
 
 

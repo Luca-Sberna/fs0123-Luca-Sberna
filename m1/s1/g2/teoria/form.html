@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teoria g2</title>
+</head>
+
+<body>
+
+    <!-- form=tag per input e button , che potrebbe anche utilizzare javascript autonomamente , serve per prendere i valori all'interno degli input per -->
+    <form>
+        <input type="text"><!-- area di testo ,elementi inline-->
+        <input type="checkbox"><!-- piccola casella quadrata da spuntare,collegabile con <label> -->
+
+        <input type="text" name="nome" placeholder="nome"><!-- cognome ecc...placeholder=testo visualizzabile -->
+        <input type="email" name="email" placeholder="email">
+        <input type="password" name="password" placeholder="password">
+        <input type="text" name="password" placeholder="riscrivi password"><!-- mostra password -->
+
+        <input type="text" name="classe" value="fs0123"
+            readonly><!-- l'attribbuto value rende subito visualizzabile il valore inserito , readonly permette solo di leggere il campo,disabled=disabilita il campo -->
+
+        <label for="consenso">Accetto il trattamento dei dati </label><!-- modulo accettazione dati -->
+        <input type="checkbox" name="consenso" id="consenso">
+
+        <!-- altri attributi input,required=segnala campi non compilati e blocca l'invio del form -->
+
+
+
+
+        <select name="city" id="#"><!-- tendina -->
+            <option value="">scegli</option>
+            <option value="milano">Milano</option>
+            <option value="roma">Roma</option><!-- option è un figlio di select -->
+        </select>
+
+
+        <textarea name="messaggio" id="#" cols="30" rows="10"></textarea><!-- area di testo -->
+
+        <button type="button" value="bottone fake">bottone fake</button>
+        <button type="submit" value="invia dati">invia il form</button>
+        <button type="reset" value="cancella tutto ">cancella dati</button>
+
+
+
+
+        <!-- autoplay=parte in auto,controls=mostra pulsanti control audio,loop=esegue audio in loop,muted,poster=img copertina -->
+        <!-- width e height=dimensioni player -->
+        <audio><!-- inserire più formati in source per renderlo compatibile per piu versioni audio -->
+            <source src="webinar.mp3" type="audio/mpeg">
+            <source src="webinar.ogg" type="audio/ogg">
+        </audio>
+
+
+        <iframe src="http...." title="..." frameborder="0" width="700"
+            height="500"></iframe><!-- per incorporare video o funzionalità da un sito esterno tipo googlemaps -->
+    </form>
+
+
+
+
+
+
+    <!-- div=elemento di tipo blocco(in sequenza vanno a  capo) -->
+    <!-- span=elemento tipo linea che colora parte di testo -->
+
+
+    struttura di una pagina
+    intestazione header-contenuto principale main-nav elemento di nav-contenuti secondari aside-footer
+    <!-- header -nav- main - aside -footer -->
+    <section></section><!-- indica una separazione di uno stesso argomento -->
+    <article></article><!-- contenuto indipendente -->
+
+
+
+</body>
+
+</html>

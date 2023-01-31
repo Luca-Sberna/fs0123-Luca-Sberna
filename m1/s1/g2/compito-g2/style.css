@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+header a {
+  text-decoration: none;
+}
+header h1 {
+  display: flex;
+  text-align: center;
+  margin-left: 4rem;
+}
+nav {
+  align-items: center;
+  width: 20%;
+  padding: 1rem;
+  display: flex;
+  justify-content: right;
+}
+#logo img {
+  width: 16rem;
+  padding: 0.5rem;
+}
+main h2 {
+  margin: 0;
+}
+.autore {
+  margin: 0;
+  margin-top: 1px;
+}
+.ptab {
+  margin: 0;
+}
+#title-tab {
+}
+table {
+  text-align: center;
+  width: 50%;
+  border: 1px solid black;
+}
+table th {
+  border: 1px solid black;
+}
+table td {
+  border: 1px solid black;
+}
