@@ -66,6 +66,14 @@ nav {
 
 
 
+main {
+  width: 55%;
+  margin: 0 auto;
+
+}
+
+
+
 
 main h2 {
   margin: 0;
@@ -82,7 +90,17 @@ main h2 {
   font-size: 10px;
 }
 
+ul {
 
+  margin: 0 auto;
+  width: auto;
+}
+
+#list {
+  margin: 0 auto;
+  width: 70%;
+
+}
 
 .p1 {
   margin-bottom: 0;
@@ -118,6 +136,14 @@ table td {
   text-align: center;
 }
 
+#sotto-tab p {
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 57%;
+
+}
+
 #link-esterno {
   text-decoration: none;
 }
@@ -140,6 +166,7 @@ aside p {
 aside form {
   text-align: center;
 }
+
 
 
 
@@ -174,6 +201,7 @@ aside form {
   display: flex;
   align-items: center;
   width: 100%;
+
 }
 
 
@@ -185,8 +213,13 @@ aside form {
 }
 
 #ftr p {
-
   margin: 0;
+
+}
+
+
+#ftr-a {
+  color: red;
 
 }
 
@@ -194,4 +227,11 @@ aside form {
   text-align: center;
   margin: 0;
   padding-top: 28px;
+  text-decoration: none;
+  color: rgb(29, 131, 131);
+}
+
+#ftr a {
+  text-decoration: none;
+
 }

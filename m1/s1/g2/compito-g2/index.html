@@ -36,34 +36,36 @@
 
     <main>
         <article>
+            <div id="list">
+                <h2>Come creare un template per i post</h2>
+                <p class="autore">di Mario Rossi - pubblicato il 25-10-2020</p>
 
-            <h2>Come creare un template per i post</h2>
-            <p class="autore">di Mario Rossi - pubblicato il 25-10-2020</p>
+                <p>La prima cosa da fare è suddividere in blocchi logici la pagina,identificando le parti comuni da
+                    applicare a tutte le pagine. </p>
 
-            <p>La prima cosa da fare è suddividere in blocchi logici la pagina,identificando le parti comuni da
-                applicare a tutte le pagine. </p>
+                <p class="p1">Le varie aree saranno quindi suddivise in:</p>
+                <ul>
+                    <li>Contenuti di intestazione del tag &lt;header&gt;
+                    </li>
+                    <li>Contenuti centrali variabili del tag &lt;main&gt;(corpo principale)</li>
+                    <li>Contenuti di fine pagina comuni,da inserire nel tag &lt;footer&gt;
+                    </li>
+                    <li>Formattazione del codice</li>
+                </ul>
 
-            <p class="p1">Le varie aree saranno quindi suddivise in:</p>
-            <ul>
-                <li>Contenuti di intestazione del tag &lt;header&gt;
-                </li>
-                <li>Contenuti centrali variabili del tag &lt;main&gt;(corpo principale)</li>
-                <li>Contenuti di fine pagina comuni,da inserire nel tag &lt;footer&gt;
-                </li>
-                <li>Formattazione del codice</li>
-            </ul>
-
-            <p class="p1">Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare
-                con i
-                CSS.Perciò i passi saranno: </p>
-            <ul>
-                <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
-                <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
-                <li>Applicare gli stili CSS</li>
-                <li>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè totale
-                </li>
-            </ul>
-
+                <p class="p1">Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da
+                    selezionare
+                    con i
+                    CSS.Perciò i passi saranno: </p>
+                <ul>
+                    <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
+                    <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+                    <li>Applicare gli stili CSS</li>
+                    <li>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè
+                        totale
+                    </li>
+                </ul>
+            </div>
 
 
             <table>
@@ -105,24 +107,24 @@
                     </tr>
                 </tbody>
             </table>
-
-
-
-            <div id="sotto-tab">
-                <p>Un test di validazione potrà essere fatto tramite il tool online <a id="link-esterno" href="#"
-                        target="_blank">LINK
-                        ESTERNO</a> dedicato
-                    allo scopo.
-                    Una volta ottimizzato il tutto,avremo raggiunto il nostro obiettivo ed essere stati dei veri
-                    developers
-                    come
-                    loro:
-                    <iframe id="video"
-                        src="https://www.bing.com/videos/search?q=&docid=608021572743294310&mid=115AA014771DD22405EF115AA014771DD22405EF&view=detail&FORM=VIRE"
-                        frameborder="2" width="500" height="350"></iframe>
-                </p>
-            </div>
         </article>
+
+
+        <div id="sotto-tab">
+            <p>Un test di validazione potrà essere fatto tramite il tool online <a id="link-esterno" href="#"
+                    target="_blank">LINK
+                    ESTERNO</a> dedicato
+                allo scopo.
+                Una volta ottimizzato il tutto,avremo raggiunto il nostro obiettivo ed essere stati dei veri
+                developers
+                come
+                loro:
+                <iframe id="video"
+                    src="https://www.bing.com/videos/search?q=&docid=608021572743294310&mid=115AA014771DD22405EF115AA014771DD22405EF&view=detail&FORM=VIRE"
+                    frameborder="2" width="600" height="500"></iframe>
+            </p>
+        </div>
+
     </main>
 
 
@@ -171,10 +173,12 @@
 
 
     <footer id="ftr">
-        <h6>Blog Epicode &copy;</h6>
+        <a href="#logo">
+            <h6 style="text-decoration: none;">Blog Epicode &copy;</h6>
+        </a>
         <p> Testata online di Mario Rossi,registrata con prot.n213/2018</p>
         <address>via Luigi Einaudi 2-Milano.P.IVA 00112233.
-            <a href="mailto:info@epicode.school" target="_blank"> info@epicode.school </a>
+            <a id="ftr-a" href="mailto:info@epicode.school" target="_blank"> info@epicode.school </a>
         </address>
     </footer>
 
