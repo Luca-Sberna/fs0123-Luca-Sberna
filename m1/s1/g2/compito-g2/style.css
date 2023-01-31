@@ -3,9 +3,11 @@ header {
   width: 100%;
   justify-content: space-between;
 }
+
 header a {
   text-decoration: none;
 }
+
 header h1 {
   display: flex;
   text-align: center;
@@ -15,19 +17,32 @@ header h1 {
   color: red;
   padding-left: 7rem;
 }
+
 .bicolor-title {
   color: rgb(12, 214, 214);
   padding: 0.8rem;
 }
+
+
+
+
+
+
 .home {
   color: aqua;
 }
+
+
 .articoli {
   color: red;
 }
+
+
 .job {
   color: aqua;
 }
+
+
 nav {
   align-items: center;
   width: 20%;
@@ -36,29 +51,48 @@ nav {
   justify-content: right;
   font-size: 1.5rem;
 }
+
+
+
 #logo img {
   width: 16rem;
   padding: 0.5rem;
   cursor: pointer;
 }
+
+
+
+
+
+
+
 main h2 {
   margin: 0;
   text-align: center;
   font-size: 1.8rem;
 }
+
+
+
 .autore {
   margin: 0;
   margin-top: 1px;
   text-align: right;
   font-size: 10px;
 }
+
+
+
 .p1 {
   margin-bottom: 0;
   padding-bottom: 1px;
 }
 
-#title-tab {
-}
+
+
+
+
+
 table {
   text-align: center;
   width: 50%;
@@ -67,72 +101,102 @@ table {
   padding: 1rem;
   margin-bottom: 3rem;
 }
+
 table th {
   border: 1px solid black;
 }
+
 table td {
   border: 1px solid black;
 }
+
+
+
+
+
+
 #link-esterno {
   text-decoration: none;
 }
+
 aside p {
   text-align: center;
 }
+
 aside form {
   text-align: center;
 }
+
+
+
+
+
+
 #art1 {
   width: 33%;
   height: 5rem;
 }
+
 #art1 p {
   margin: 0;
   text-align: center;
   font-size: 1.1rem;
 }
+
 #art1 h5 {
   margin: 0;
   text-align: center;
   font-size: 1.5rem;
 }
+
 #art2 {
   width: 33%;
   height: 5rem;
 }
+
 #art2 p {
   margin: 0;
   text-align: center;
   font-size: 1.1rem;
 }
+
 #art2 h5 {
   margin: 0;
   text-align: center;
   font-size: 1.5rem;
 }
+
 #art3 {
   width: 33%;
   height: 5rem;
 }
+
 #art3 p {
   margin: 0;
   text-align: center;
   font-size: 1.1rem;
 }
+
 #art3 h5 {
   margin: 0;
   text-align: center;
   font-size: 1.5rem;
 }
+
 #articles {
   display: flex;
   align-items: center;
   width: 100%;
 }
+
 #video {
   display: flex;
   margin-top: 1rem;
 }
+
+
+
+
 #ftr {
   text-align: center;
 }
