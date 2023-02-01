@@ -1,0 +1,39 @@
+#rosso {
+    background-color: red;
+}
+
+.giallo {
+    background-color: yellow;
+}
+
+#conflitti div {
+    background-color: blue;
+
+
+}
+
+#conflitti div {
+    background-color: rgb(0, 0, 0);
+    /*  !important*/
+    /* important da priorità */
+    /* vince perchè si trova più in basso */
+
+
+}
+
+#conflitti .verde {
+    background-color: green;
+
+}
+
+#conflitti #rosa.verde {
+    background-color: aqua;
+    /* maggior specificità */
+
+}
+
+/* div => 1
+classi => 10 
+id => 100 */
+/* inline style => 1000 (in html) */
+/* chi ha più peso vince  */

@@ -1,0 +1,69 @@
+/* posso modificare la dimensione assoluta di tutti i testi del body
+body {
+    font-size: 20px; => pixel misura assoluta
+
+
+} */
+
+:root {
+    font-size: 25px;
+    /* per cambiare tutti i font e nasce con 16px*/
+}
+
+#t1 {
+    font-size: 1rem;
+    /* 1 rem = 16 pixel */
+}
+
+
+#t2 {
+    font-size: 15px;
+    font-weight: bold;
+    /* dai 400 ai 600 */
+    /* grassetto */
+    font-style: italic;
+    /* corsivo */
+
+    text-transform: uppercase;
+    /* trasforma in stampatello */
+
+    line-height: 1.5;
+    /* dimensione spazio tra interlinee */
+
+    text-shadow: 4px 4px 8px 2px black;
+    /* singola */
+    text-shadow: 4px 4px 8px 2px black, 4px 4px 8px 2px black;
+    /* multipla */
+
+    /* 1 valore = disp orizzontale 
+       2 valore = disp verticale
+       3 valore raggio sfocatura 
+       4 valore = spread dell'ombra
+       5 valore = colore ombra*/
+
+
+}
+
+#t3 {
+    font-size: 1em;
+    /* em eredita dal genitore */
+
+}
+
+#parent {
+    font-size: 50px;
+}
+
+article {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font e font di sicurezza */
+
+}
+
+@font-face {
+    font-family: FontPersonale;
+    /* si riscrive per richiamarlo dove si preferisce (oltre che metterlo all'inizio per tutto ) */
+    src: url(../fonts/Qalisha\ Signature\ Script.woff2) format(''),
+        /* browser recenti */
+
+}

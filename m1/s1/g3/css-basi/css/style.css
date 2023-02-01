@@ -1,0 +1,22 @@
+/* selettore = {
+proprietà/regola : valore
+}*/
+div {
+    color: red;
+    background-color: blue;
+
+}
+
+
+/* richiama tutti gli span dentro i div */
+div span {
+    color: #fff;
+
+}
+
+
+/* richiama sia tutti i div che tutti gli span con la , */
+div,
+span {
+    border: 1px solid black;
+}
