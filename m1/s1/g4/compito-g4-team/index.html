@@ -20,11 +20,11 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#" title="Home Page">=>Home<= </a>
+                <li><a href="#" title="Home Page">=> Home <= </a>
                 </li>
-                <li><a href="#" title="Elenco degli articoli tecnici pubblicati">=>Articoli<= </a>
+                <li><a href="#" title="Elenco degli articoli tecnici pubblicati">=> Articoli <= </a>
                 </li>
-                <li><a href="#" title="Candidati inviando un tuo cv">=>Job<= </a>
+                <li><a href="#" title="Candidati inviando un tuo cv">=> Job <= </a>
                 </li>
             </ul>
         </nav>
@@ -36,13 +36,14 @@
     <main>
         <article>
             <h1>Come creare un template per i post</h1>
-            <p>di Mario Rossi - <span>pubblicato il 25-10-2020</span></p>
+            <p id="autor-date"><i class="fas fa-pen-square"></i>di Mario Rossi<i class="fas fa-clock"></i>pubblicato
+                il 25-10-2020</p>
 
             <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <strong>parti
                     comuni</strong> da applicare a tutte le pagine</p>
 
-            <p>Le varie aree saranno quindi suddivise in:</p>
-            <ul id="not-ord">
+            <p class="par">Le varie aree saranno quindi suddivise in:</p>
+            <ul>
                 <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
                 <li>Contenuti centrali variabili del tag <code>&lt;main&gt;</code> (corpo principale)</li>
                 <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code></li>
@@ -51,13 +52,14 @@
             <h2>Formattazione del codice</h2>
             <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <strong>selezionare con
                     i CSS</strong>. Perciò i passi saranno:</p>
-            <ol id="li-ord">
+            <ol>
                 <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
                 <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
                 <li>Applicare gli stili CSS</li>
             </ol>
 
-            <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</p>
+            <p class="par">L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché
+                totale.</p>
 
             <table>
                 <caption>Diffusione dei CSS</caption>
@@ -97,18 +99,17 @@
                 </tbody>
             </table>
 
-            <p>Un test di validazione potrà essere fatto tramite il <a href="#" target="blank"
+            <p class="par">Un test di validazione potrà essere fatto tramite il <a class="a2" href="#" target="blank"
                     title="Validatore CSS online del W3C">tool online</a> dedicato allo scopo. Una volta
                 ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come
                 loro:</p>
             <div id="vid">
-                <iframe width="300" height="300" src="https://www.youtube.com/embed/dvOvHXruEDM"
-                    title="YouTube video player"
+                <iframe src="https://www.youtube.com/embed/dvOvHXruEDM" title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
             <section>
-                <h2>Novità</h2>
+                <h2 class="sub-title">Novità</h2>
                 <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
 
                 <form method="POST" action="elabora_form.php">
@@ -122,28 +123,36 @@
         </article>
 
         <aside>
-            <h2>Articoli correlati</h2>
-            <div>
-                <a href="#" title="Passaggi guidati per validare correttamente tutto il codice sviluppato">Validare il
-                    codice
-                    HTML</a>
-                <p>Categoria: develop</p>
-                <p>Data: 18-9-2020</p>
+            <h2 class="sub-title">Articoli correlati</h2>
+            <div id="art1">
+                <div class="art-info">
+                    <a href="#" title="Passaggi guidati per validare correttamente tutto il codice sviluppato">Validare
+                        il
+                        codice
+                        HTML</a>
+                    <p><i class="fas fa-tag"></i>Categoria: develop</p>
+                    <p class="date"><i class="fas fa-calendar-alt"></i>Data: 18-9-2020</p>
+                </div>
             </div>
 
-            <div>
-                <a href="#" title="Passaggi guidati per controllare e correggere tutto il codice sviluppato">Correggere
-                    la
-                    sintassi</a>
-                <p>Categoria: develop</p>
-                <p>Data: 16-9-2020</p>
+            <div id="art2">
+                <div class="art-info">
+                    <a href="#"
+                        title="Passaggi guidati per controllare e correggere tutto il codice sviluppato">Correggere
+                        la
+                        sintassi</a>
+                    <p><i class="fas fa-tag"></i>Categoria: develop</p>
+                    <p class="date"><i class="fas fa-calendar-alt"></i>Data: 16-9-2020</p>
+                </div>
             </div>
 
-            <div>
-                <a href="#" title="Consigli ed approcci per ridurre il peso della pagina">Meno Kb nella
-                    pagina</a>
-                <p>Categoria: ottimizzazione</p>
-                <p>Data: 30-9-2020</p>
+            <div id="art3">
+                <div class="art-info">
+                    <a href="#" title="Consigli ed approcci per ridurre il peso della pagina">Meno Kb nella
+                        pagina</a>
+                    <p><i class="fas fa-tag"></i>Categoria: ottimizzazione</p>
+                    <p class="date"><i class="fas fa-calendar-alt"></i>Data: 30-9-2020</p>
+                </div>
             </div>
         </aside>
     </main>
@@ -152,9 +161,12 @@
 
     <footer>
         <p>Blog Epicode &copy;2021</p>
-        <address>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA
+        <address>Testata online di Mario Rossi, registrata con <br> prot. n.213/2018 - via Luigi Einaudi 2 - Milano.
+            <br>
+            P.IVA
             00112233. <a href="mailto:info@epicode.school"
-                title="contattami per informazioni/lavoro/privacy">info@epicode.school</a></address>
+                title="contattami per informazioni/lavoro/privacy">info@epicode.school</a>
+        </address>
     </footer>
 
 </body>
