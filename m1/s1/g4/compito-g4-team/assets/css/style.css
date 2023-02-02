@@ -1,0 +1,107 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    background-image: url(../img/sfondo.png);
+    width: 300px;
+    margin: 0 auto;
+    background-position: center;
+    background-size: 500px;
+    background-repeat: repeat-y;
+
+}
+
+
+
+
+
+
+
+/* HEADER */
+
+header {
+    margin: 0 auto;
+    width: 280px;
+    height: 250px;
+    background-color: blue;
+    max-width: 100%;
+    margin-top: 0.9rem;
+    box-shadow: 3px 3px 3px 0px;
+
+}
+
+header div {
+    text-align: center;
+    padding-top: 2rem;
+
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header p {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+header li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.3rem;
+    list-style: none;
+
+}
+
+/* MAIN */
+main {
+    border: 1px solid rgb(61, 61, 61);
+    background-color: white;
+}
+
+main li {
+    text-align: center;
+
+
+
+}
+
+#li-ord {}
+
+#not-ord {}
+
+main article {
+    margin: 1rem 1rem 1rem 1rem;
+    margin-left: 1.3rem;
+}
+
+#vid {
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+
+footer {
+    margin: 0;
+    border: 1px solid rgb(38, 38, 39);
+    background-color: rgb(90, 90, 200);
+    margin-bottom: 1rem;
+
+
+}
