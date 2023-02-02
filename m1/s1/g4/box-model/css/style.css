@@ -1,0 +1,68 @@
+/* area del contenuto */
+.quadrato {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    overflow: auto;
+}
+
+.max {
+    max-width: 900px;
+    background-color: blue;
+    height: 10px;
+    min-height: 20px;
+}
+
+/* area del padding */
+
+.padding {
+    padding: 15px;
+    /* padding ritagliato all'interno , usa lo spazio assegnato originariamente  */
+    box-sizing: border-box;
+
+    /* padding: 15px(sopra e sotto ) , 0 (a sinistra e a destra) */
+    /* dando 4 valori si parte da top , si segue in senso orario fino a left */
+
+}
+
+
+/* area del border */
+
+/* è l'area subito dopo il padding,serve a poter dare un bordo grafico agli elementi */
+
+/* valori del border :
+solid=colore pieno
+dotted=punteggiato
+dashed=tratteggiato
+double=bordo doppio
+groove/ridge=bordo 3d
+inset/outset=bordo 3d
+none=nessun bordo
+hidden=nascosto
+border-top-left-radius=alto a sinistra
+border-top-right-radius=alto a destra
+border-bottom-right-radius=basso a destra
+border-bottom-left-radius=basso a sinistra
+border-radius=tutti gli angoli
+ */
+
+.border {
+    border: 5px solid black;
+    /* con il 100% forma un cerchio */
+    /* anche dando 4 valori insieme in percentuale */
+    border-radius: 5px;
+
+
+}
+
+
+/* area del margin */
+
+.margin {
+    /* va utilizzato per staccare due elementi tra loro, area totalmente invisibile ed è esterno all'elemento*/
+    margin: 100px
+        /* outline si sovrappongono agli aelementi , area di contorno che non influisce sul box model */
+}
+
+
+/* reset  */

@@ -37,3 +37,171 @@ classi => 10
 id => 100 */
 /* inline style => 1000 (in html) */
 /* chi ha più peso vince  */
+
+
+
+
+
+
+.special {
+    /* classi */
+
+}
+
+#banner .special {
+    /* tutte le classi dentro l'id banner = tutti i figli dell'elemento */
+
+}
+
+
+p.special {
+    /* tutti i paragrafi delle classi indicate */
+
+}
+
+/* in css : section span{}     tutti gli span nei section */
+
+
+/* in css : section > span{}   solo gli span diretti di section  */
+
+
+section+small {
+    /*  */
+
+}
+
+section~small {
+    /* tutti gli small dopo una section */
+
+
+}
+
+/* sitli generali */
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    /* indicare un tag a dove si è già passati (visitati) */
+
+}
+
+a:active {
+    font-size: 2rem;
+    /* cambia lo stile grafico andandoci col mouse */
+}
+
+a,
+a:visited,
+a:active {
+    color: black;
+}
+
+
+/* stili generali  */
+
+
+
+
+
+
+
+
+/* esempio menu mobile pure css */
+
+
+
+#menu {
+    background-color: bisque;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+#toggle {
+    display: none;
+}
+
+input:checked {
+    /* gli input che sono stati selezionati */
+    display: none;
+}
+
+#toggle:checked+#menu {
+    /*  */
+    height: 70px;
+
+
+}
+
+/* effetti hover */
+
+#menu li:hover {
+    /* se l utente passa col mouse su li cambia il colore di background */
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+/* per tabelle */
+table tr:first-child {
+    /* di ogni tabella la prima tr (first child sarebbe la prima cella della prima riga) */
+    background-color: rgb(255, 255, 255);
+}
+
+table tr:nth-last-of-type(add) {
+    /* una si e una no = add */
+    /* seleziona altre zone della tabella */
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+
+table tr:first-child td:first-child {
+    /* le tr e td di ogni tabella   */
+    /* anche concatenando con un altro colore */
+    background-color: rgb(2, 2, 2);
+}
+
+table tr:nth-last-of-type(add):not(.bianca) {
+    /* una si e una no = add */
+    /* seleziona altre zone della tabella */
+    /* in questo caso non colorerà la bianca */
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+
+
+/* pseudo elementi  */
+
+
+table tr:first-child td::after(o before) {
+    /* ti aggiunge il valore di content nelle tabelle alla prima riga  */
+    content: "+";
+    animation-name: ruota;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+
+
+}
+
+@keyframes ruota {
+    o% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

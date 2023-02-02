@@ -1,0 +1,47 @@
+img {
+    max-width: 100%;
+    /* da mettere sempre per ridimensionare bene le immagini rispetto al loro contenitore */
+}
+
+
+.quadrato1 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+
+}
+
+.quadrato {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+
+}
+
+#q1 {
+    background-image: url(../img/OIP.jpg);
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#q3 {
+    background-image: url(../img/OIP.jpg), url(../img/OIP.jpg);
+    background-size: 100px auto, 30px auto;
+    /* repat-y=sdoppia verticalmente / repeat-x =orizzontalmente */
+    background-repeat: no-repeat, repeat-y;
+    background-position: right, left;
+
+
+}
+
+#q4 {
+    background-image: url(../img/237-200x300.jpg);
+    /*cover da priorità allo sfondo magari tagliando anche l immagine/no repeat e center */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
