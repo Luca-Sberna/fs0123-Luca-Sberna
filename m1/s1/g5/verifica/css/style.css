@@ -8,6 +8,11 @@ body {
     text-align: center;
 }
 
+body p {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
 body h1,
 h2,
 h4 {
@@ -179,6 +184,8 @@ header img {
 
 
 
+
+
 aside section #red-space {
     background-color: red;
     height: 16rem;
@@ -194,16 +201,28 @@ aside section #red-space {
 #sub-para-red {
     font-style: italic;
     margin-top: 1rem;
+    font-size: 1rem;
 }
 
+
+.name {
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+
 #autore {
-    margin-top: 1rem;
+
+    font-size: 0.6rem;
+    padding-top: 2rem;
 
 }
 
 #red-space h2 {
     margin: 0 auto;
-    padding-top: 2.5rem;
+    padding-top: 2.9rem;
+
 }
 
 
@@ -232,6 +251,12 @@ aside section #red-space {
 
 
 }
+
+
+
+
+
+
 
 
 footer {
