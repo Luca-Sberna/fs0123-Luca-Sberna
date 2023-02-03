@@ -1,0 +1,272 @@
+/* Your styles here */
+
+body {
+    margin: 0 auto;
+    line-height: 1.65;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+body h1,
+h2,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5;
+}
+
+img {
+    cursor: pointer;
+}
+
+
+
+
+
+#btn a {
+    text-decoration: none;
+    color: #25a2c3;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    font-size: 7px;
+
+
+
+}
+
+#btn {
+    width: 2.2rem;
+    display: block;
+    border-radius: 100%;
+    height: 1.9rem;
+    position: fixed;
+    margin-left: 1px;
+    background-color: red;
+
+}
+
+#btn:hover {
+    transform: scale(1.1);
+}
+
+#btn i {
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+header {
+    background-color: black;
+    height: 5.5rem;
+
+}
+
+
+
+header img {
+    height: 2.2rem;
+    display: flex;
+    padding-top: 1.4rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+
+#bck-img {
+    background-image: url(../assets/img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20rem;
+}
+
+
+
+
+#first-part h1 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+
+
+}
+
+#first-part p {
+    padding-bottom: 1rem;
+
+
+}
+
+#first-part a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#a-btn {
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 8rem;
+    height: 0.8rem;
+    padding-bottom: 1.2rem;
+    border: 5px solid red;
+    border-radius: 9px 9px 9px 9px;
+    background-color: red;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+
+#second-part {
+    margin-top: 2rem;
+
+}
+
+#second-part h4 {
+    margin-bottom: 1rem;
+
+}
+
+#second-part p {
+    margin-bottom: 2rem;
+}
+
+#second-part img {
+    border-radius: 100%;
+    max-width: 100%;
+    height: 11rem;
+
+
+
+}
+
+#second-part #cont-img {
+    width: 12rem;
+    height: 10rem;
+    margin: 0 auto;
+
+}
+
+#second-part #last-p {
+    margin-bottom: 4rem;
+
+}
+
+#second-part #after-img {
+
+    margin-top: 2.5rem;
+}
+
+
+
+
+aside section #red-space {
+    background-color: red;
+    height: 16rem;
+    margin-bottom: 3.5rem;
+}
+
+#red-space h2,
+.para-red {
+    color: white;
+
+}
+
+#sub-para-red {
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+#autore {
+    margin-top: 1rem;
+
+}
+
+#red-space h2 {
+    margin: 0 auto;
+    padding-top: 2.5rem;
+}
+
+
+
+.art {
+    border: 1.5px solid #dee1e3;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 2.5rem;
+
+}
+
+.art img {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.art p {
+    margin-bottom: 2rem;
+
+}
+
+.art h4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+
+}
+
+
+footer {
+    height: 23rem;
+    background-color: #25a2c3;
+    color: white;
+}
+
+footer section h2 {
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+
+footer section .ftr,
+a {
+    color: #c8e7f0;
+}
+
+
+
+footer section i {
+    color: white;
+
+}
+
+.ftr-hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 55%;
+}
+
+footer i {
+    margin-right: 0.5rem;
+
+}
