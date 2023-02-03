@@ -23,6 +23,14 @@ img {
 
 
 
+
+
+
+
+
+
+
+
 #btn a {
     text-decoration: none;
     color: #25a2c3;
@@ -93,8 +101,18 @@ header img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 20rem;
+    height: 35rem;
 }
+
+
+#cont-img {
+    padding-top: 10rem;
+    line-height: 2rem;
+
+}
+
+
+
 
 
 
@@ -118,6 +136,9 @@ header img {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    /*  display: flex; */
+    margin: 0 auto;
+
 }
 
 #a-btn {
@@ -126,13 +147,16 @@ header img {
     text-transform: uppercase;
     width: 8rem;
     height: 0.8rem;
-    padding-bottom: 1.2rem;
+    padding-bottom: 1.3rem;
     border: 5px solid red;
     border-radius: 9px 9px 9px 9px;
     background-color: red;
     margin: 0 auto;
+    margin-top: 1.9rem;
+
 
 }
+
 
 
 
@@ -160,49 +184,46 @@ header img {
 }
 
 
-#second-part p,
-h4 {
 
-    justify-content: left;
-}
+
+
 
 #near-img {
     display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
+    /* text-align: center; */
     width: 70%;
     margin: 0 auto;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    padding-bottom: 5rem;
+    /*  margin-bottom: 10rem; */
+    /*  justify-content: center;
+    align-items: center; */
 }
+
+#near-img img {
+    height: 22rem;
+    margin: 0 auto;
+}
+
 
 #txt {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-left: 2rem;
-
+    text-align: left;
+    width: 40%;
+    margin-left: 5rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding-top: 1.5rem;
 }
+
 
 #second-part #cont-img {
 
-    width: 30%;
-    display: flex;
-
-
-
+    width: 25%;
+    margin: 0 auto;
 }
 
-#second-part #last-p {
-    margin-bottom: 4rem;
 
-}
 
-#second-part #after-img {
 
-    margin-top: 2.5rem;
-}
 
 
 
@@ -241,12 +262,23 @@ aside section #red-space {
 }
 
 
-/* #box-d div {
-    height: 20rem;
-    display: flex;
 
-} */
 
+
+
+
+
+
+
+
+
+
+
+#box-d a {
+    text-decoration: none;
+    color: #25a2c3;
+
+}
 
 
 #articles {
@@ -255,6 +287,8 @@ aside section #red-space {
     max-width: 100%;
     justify-content: space-around;
     margin: 0 auto;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
 }
 
 .art {
@@ -269,6 +303,7 @@ aside section #red-space {
 
 .art img {
     max-width: 100%;
+
 }
 
 .art p {
@@ -284,6 +319,13 @@ aside section #red-space {
 
 
 }
+
+
+
+
+
+
+
 
 
 footer {
