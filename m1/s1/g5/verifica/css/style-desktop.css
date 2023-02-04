@@ -274,7 +274,7 @@ aside section #red-space {
 
 
 
-#box-d a {
+#articles a {
     text-decoration: none;
     color: #25a2c3;
 
@@ -289,7 +289,15 @@ aside section #red-space {
     margin: 0 auto;
     padding-bottom: 5rem;
     padding-top: 3rem;
+
 }
+
+#articles p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
 
 .art {
     border: 1.5px solid #dee1e3;
