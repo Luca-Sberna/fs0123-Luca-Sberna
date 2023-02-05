@@ -8,10 +8,10 @@ body {
     text-align: center;
 }
 
-body p {
+/* body p {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-}
+} */
 
 body h1,
 h2,
@@ -104,7 +104,7 @@ header img {
 
 
 
-#first-part h1 {
+#bck-img h1 {
     padding-top: 2rem;
     padding-bottom: 1rem;
     font-size: 1.8rem;
@@ -113,13 +113,13 @@ header img {
 
 }
 
-#first-part p {
+#bck-img p {
     padding-bottom: 1rem;
 
 
 }
 
-#first-part a {
+#bck-img a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -192,7 +192,8 @@ header img {
 aside section #red-space {
     background-color: red;
     height: 16rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 5rem;
+
 }
 
 #red-space h2,
@@ -240,6 +241,11 @@ aside section #red-space {
     border: 1.5px solid #dee1e3;
     border-radius: 5px 5px 5px 5px;
     margin-bottom: 2.5rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
 
 }
 
@@ -274,6 +280,8 @@ footer {
     color: white;
 }
 
+
+
 footer section h2 {
     color: white;
     padding-top: 2rem;
@@ -297,7 +305,7 @@ footer section i {
 .ftr-hr {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    width: 55%;
+    width: 50%;
 }
 
 footer i {
