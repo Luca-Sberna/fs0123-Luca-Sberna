@@ -1,0 +1,22 @@
+* {
+    margin: 0 auto;
+
+}
+
+#text {
+    box-shadow: 0 0 15px 20px rgba(80, 79, 79, 0.528);
+    max-width: 300px;
+    padding: 50px 0;
+    border-radius: 100%;
+    margin: 50px auto;
+    background: rgb(180, 58, 58);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(224, 36, 65, 1) 27%, rgba(253, 29, 29, 1) 71%, rgba(252, 176, 69, 1) 100%);
+    color: white
+}
+
+#text h1 {
+    margin: 30px;
+    text-align: center;
+
+
+}
