@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        var anni = prompt('Quanti anni hai?')//funzione per salvare un dato che l'utente specifica,prompt restituisce sempre una stringa
+
+        console.log(anni)
+
+
+
+        //nella parentesi tonde isnerire la condizione , il dato , nelle graffe in base alla condizione cosa effettuare
+
+        /*     var condizione = true;
+    
+            if (condizione) {
+                document.write('Vero');
+    
+            } else {
+                document.write('Falso');
+            }
+    
+            var confronto = 30 < 10;
+            console.log(confronto); */
+
+
+        /* 
+        
+        > maggiore di 
+        < minore di 
+        >= superiore o uguale 
+        <= inferiore o uguale
+        == uguale
+        === strettamente uguale
+        != diverso
+        
+        */
+
+        //l'operatore end(&&) permette di verificare un confronto e se corretto va vanti
+
+        if (Number(anni) != NaN) {
+
+            if (anni >= 18 && anni <= 110) {
+                document.write('Sei Maggiorenne');
+
+            } else if (anni > 110) {
+                document.write('Sei antico!');
+
+            } else {
+                document.write('Sei minorenne!');
+            }
+
+        } else {
+            document.write('Sono ammessi solo numeri')
+        }
+
+    </script>
+</body>
+
+</html>

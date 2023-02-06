@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        //le variabili sono allocazioni di memoria su cui possiamo salvare un dato (da considerare come un contenitore)
+        //non puo cominciare con un numero o simbolo solo con _ , gli spazi non sono accettati, le parole si separano col camel case 
+
+        var numero = 5; // var è usato solo in fase di dichiarazione
+        var nomeUtente = 'mario';
+        // = è chiamato operatore di assegnamento
+
+        console.log(numero, nomeUtente); //si possono leggere le variabili anche concatenandole
+
+        numero = 8;
+        console.log(numero)//una variabile può essere riassegnata , però quella prima andrà persa
+
+
+
+
+
+
+
+        /* tipi di dato - tipizzazione debole = non dobbiamo dichiarare che tipo di dato stiamo assegnando ad una variabile
+        
+        string = identificata dalle '' o " "
+        number = 10
+        boolean = true oppure false
+        array = identificati dalle [ ]
+        object = identificati dalle { }
+
+        */
+
+        var a = 2;
+        var b = 3;
+        var c = a + b; //esempio
+
+        console.log(c) /* oppure */
+        console.log(c, a + b);
+
+
+
+
+
+
+
+
+        /* operatori aritmetici
+        + = somma
+        - = sottrazione
+        / = divisione 
+        * = moltiplicazione 
+         */
+
+
+        var nome = 'Mario';
+        var saluto = 'Ciao';
+
+        console.log(saluto + ' ' + nome);
+
+
+
+
+
+
+
+        /* 
+        parkour / operazioni tra dati diversi / conversione tipi di dato
+        */
+
+        var num = 10;
+        var strNum = '10';
+
+        console.log(num + strNum);//il numero si converte in stringa,avviene un concatenamento
+
+        console.log(num * strNum);//la stringa viene convertita in numero, avremo una moltiplicazione
+
+        console.log(num * '10a')//restituisce NaN (not a number) perchè la stringa contiene anche una lettera
+
+        console.log(typeof num)//restituisce il tipo di dato
+
+    </script>
+</body>
+
+</html>
