@@ -5,18 +5,22 @@
 
 #text {
     box-shadow: 0 0 15px 20px rgba(80, 79, 79, 0.528);
-    max-width: 300px;
+    max-width: 350px;
+    max-height: 350px;
     padding: 50px 0;
     border-radius: 100%;
-    margin: 50px auto;
+    margin: 40px auto;
     background: rgb(180, 58, 58);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(224, 36, 65, 1) 27%, rgba(253, 29, 29, 1) 71%, rgba(252, 176, 69, 1) 100%);
-    color: white
+    color: white;
+    cursor: pointer;
+
 }
 
 #text h1 {
-    margin: 30px;
+    margin: 50px;
     text-align: center;
+
 
 
 }
