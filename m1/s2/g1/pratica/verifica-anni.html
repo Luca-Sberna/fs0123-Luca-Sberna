@@ -47,9 +47,10 @@
         
         */
 
+
         //l'operatore end(&&) permette di verificare un confronto e se corretto va vanti
 
-        if (Number(anni) != NaN) {
+        if (!isNaN(Number(anni))) {
 
             if (anni >= 18 && anni <= 110) {
                 document.write('Sei Maggiorenne');
