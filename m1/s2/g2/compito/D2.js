@@ -34,11 +34,20 @@ Undefined = indica che non è stata assegnata alcuna variabile o non è stata ne
 
 )*/
 
+
+
+
+
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
 let _name = 'Luca';
+
+
+
+
+
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
@@ -49,11 +58,21 @@ let num2 = 20
 let num3 = num1 + num2
 console.log(num3) */
 
+
+
+
+
+
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
 let x = 12;
+
+
+
+
+
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
