@@ -146,6 +146,7 @@ if (name1 === lowerName2) {
 /* let lowerName1 = name1.toLowerCase();
 let lowerName2 = name2.toLowerCase(); */
 
+//ternaria
 name1 = name1.toLowerCase()
 name2 = name2.toLowerCase()
 
