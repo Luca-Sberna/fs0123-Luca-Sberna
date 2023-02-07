@@ -28,6 +28,7 @@ let nome = 'mario' stringa;          |   int numero = 45;
 String nome = 'mario';               |   bool esempio = true;
  
 inoltre ci sono delle keywords che ci indicano degli errori specifici come :
+
 Null = indica l'assenza intenzionale di un contenuto in un elemento
 Undefined = indica che non è stata assegnata alcuna variabile o non è stata neanche implementata
 
@@ -59,7 +60,7 @@ let x = 12;
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 
-//const _name = 'il tuo cognome'; è impossibile richiamare con const una variabile già assegnata
+//const _NAME = 'il tuo cognome'; è impossibile richiamare con const una variabile già assegnata
 
 
 
