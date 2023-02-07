@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+        //apro un blocco
+        {
+            var a = 0;//non è soggetta a block scope , quindi puo essere utilizzata anche all'esterno del blocco
+            console.log(a)
+        }
+        console.log(a)
+
+
+
+        {
+            let b = 1;
+            console.log(b)//b is not defined
+        }
+        console.log(b)
+        //non si può creare un var con lo stesso valore di let
+
+
+
+
+
+
+        //var viene spazzata via da let pur essendo nel blocco 
+        var c = 2;
+        {
+            console.log(c)//mi riferisco a let
+            let c = 2;
+        }
+        console.log(c)//mi riferisco alla var
+
+        //esempio
+        //let puo essere riassegnata come var , se chiusa in un blocco fuori dal blocco non si leggerà
+        // e funziona solo per quel blocco
+        let condizione = true;
+        let numero;
+        if (condizione) {
+            let numero = 90;
+        } else {
+            let numero = 50;
+        }
+        console.log(numero)
+
+
+        //CONST
+        //le variabili const non possono essere riassegnate 
+        //il naming delle costanti si scrive prettamente in maiuscolo uando gli underscore pr separare parole
+
+
+        //valori interni
+        const OGGETTO = {//se ha piu oggetti si separa con la virgola
+            nome: 'Mario',
+            cognome: 'Rossi'
+        }
+
+        console.log(OGGETTO.nome) //per vedere il valore nome della const oggetto 
+//i valori interni di const possono essere riassegnati come il nome e il cognome dell'esempio sopra
+
+
+        /* Object.freeze(OGGETTO) => posso congelare l'oggetto con i suoi valori interni*/
+
+//null = elemento inesistente
+//nella logica booleana ti darà false 
+//undefined = indica che una variabile non ha un valore assegnato o è inesistente
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

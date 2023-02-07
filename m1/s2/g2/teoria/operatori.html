@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        //operatori di assegnazione
+        let a = 2;
+        let b = 4;
+
+        console.log(b)
+
+        b = 6;//variabile richiamata
+
+        a += 2;//2+2
+        a -= 2;//4-2 // è un assegnamento che ti calcola il valore e lo sostituisce
+
+        let c = '<div>ciao';
+
+        c += '</div>';//concatena la chiusura del div ovunque la si richiama
+        //altro metodo c = c + '</div>' è come scrivere questo;
+
+
+
+
+
+        //operatori logici e di comparazione
+
+        let anni = 30;
+        console.log(anni < 18);//false
+        console.log(anni > 18);//true
+        console.log(18 > 18);//false ,uguale non superiore
+        console.log(18 >= 18);//vero,se è uguale a 18 o superiore
+        console.log(18 <= 18);//vero se uguale a 18 o inferiore
+        console.log(18 == 18);//uguale-in caso di una stringa e un numero viene fatta una conversione e una cmparazione
+        console.log(18 != 18);//falso perchè è uguale
+        console.log(18 === 18);//true ,vengono valutati e comparati valore e tipo di dato in questo caso valore=18 tipo di dato = number
+        console.log(18 !== 18);// false,devono essere differenti il tipo o il valore
+
+        //quando si confrontano dei dati , funzioni o ricavare un booleano si usa il == per indicare un assegnazione
+        if (anni == 20) {
+
+        }
+
+        //&& = e in contemporanea, assegna true se entrambe le relazioni tra le due comparazioni sono vere
+        //|| = or , ti da true se almeno una delle due è vera
+        // ! = usato come negazione , può essere usato per invertire qualunque booleano
+        console.log(!(anni >= 18 && anni <= 110));//inverto il valore booleano 
+
+
+        let valore = '';
+        if (!valore/* se non è stringa vuota procede */) {
+
+        }
+
+
+
+
+        //typeof ti definisce il tipo di dato
+
+        //operatore ternario , solo per due possibilità (on/off)
+
+        let controllo = anni >= 18 ?/* if */ 'Sei maggiorenne' :/* else */ 'Sei minorenne';
+
+        // \ = questo backslash  prima di un apostrofo o caratteri speciali
+        // \\ = per far vedere uno slash se ne inseriscono due
+
+
+    </script>
+</body>
+
+</html>
