@@ -29,10 +29,21 @@ String nome = 'mario';               |   bool esempio = true;
  
 inoltre ci sono delle keywords che ci indicano degli errori specifici come :
 
-Null = indica l'assenza intenzionale di un contenuto in un elemento
+Null = indica l'assenza intenzionale di un contenuto in un elemento,Puoi assegnare null a una variabile per indicare che non contiene alcun valore o oggetto. 
+Questo è utile quando devi cancellare il valore di una variabile o per inizializzare una variabile che verrà successivamente assegnata a un valore.
+
 Undefined = indica che non è stata assegnata alcuna variabile o non è stata neanche implementata
 
 )*/
+
+//let a;
+//console.log(a); -> undefined
+
+
+//let a = null;
+//console.log(a);
+
+
 
 
 
@@ -43,6 +54,7 @@ Undefined = indica che non è stata assegnata alcuna variabile o non è stata ne
 */
 
 let _name = 'Luca';
+
 
 
 
@@ -63,11 +75,14 @@ console.log(num3) */
 
 
 
+
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
 let x = 12;
+
+
 
 
 
@@ -87,12 +102,15 @@ let x = 12;
 
 
 
+
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 
 let y = 4 - x;
 console.log(y);
+
+
 
 
 
