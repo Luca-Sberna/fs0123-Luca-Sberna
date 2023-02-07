@@ -134,9 +134,9 @@ console.log(name1 != name2);//true, è diverso
 let lowerName2 = name2.toLowerCase();
 
 if (name1 === lowerName2) {
-  console.log(lowerName1 + ' è uguale a ' + lowerName2);
+  console.log(name1 + ' è uguale a ' + lowerName2);
 } else {
-  console.log(lowerName1 + ' è diverso da ' + lowerName2);
+  console.log(name1 + ' è diverso da ' + lowerName2);
 } */
 
 
