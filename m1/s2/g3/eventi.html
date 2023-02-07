@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- evento = qualunque elemento che va ad interagire con l 'utente', click , mouse , scorrimento pagina.... -->
+    <button id="btn" onclick="scrivi(this)">clicca</button>
+    <!-- this al click va sparato direttamente dentro la funzione specifica  , this va a prende quella specifica variabile -->
+
+
+
+
+
+
+
+
+    <script>
+
+
+        /* se devi applicare stili per un animazione solo all avverarsi di determinate condizioni per esempio */
+        function scrivi(elemento) {
+
+
+            elemento.style.backgroundColor = 'yellow';
+            elemento.style.width = '500px';
+            elemento.style.height = '500px';
+
+            document.getElementById('btn').innerHTML = 'ciaooooooo!';
+
+            console.dir(elemento);
+            console.log(elemento);
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
