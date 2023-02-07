@@ -143,11 +143,10 @@ if (name1 === lowerName2) {
 
 // extra dell'extra : secondo metodo
 
-/* let lowerName1 = name1.toLowerCase();
-let lowerName2 = name2.toLowerCase(); */
+
 
 //ternaria
-name1 = name1.toLowerCase()
+name1 = name1.toLowerCase()//funzione
 name2 = name2.toLowerCase()
 
 let controllo = name1 === name2 ?
