@@ -28,29 +28,68 @@
         let objOld = new Object();//sconsigliato
         let obj = {};//si usa questo
 
-        let pizza = {
-            gusto: 'margherita',
-            prezzo: 5,
-            mostraPrezzo: function () {
-                //interpolazione rende dinamica
-                console.log(`la pizza ${this.gusto} costa ${this.prezzo} $ `);
+        {
+            let pizza = {
+                gusto: 'margherita',
+                prezzo: 5,
+                mostraPrezzo: function () {
+                    //interpolazione rende dinamica
+                    console.log(`la pizza ${this.gusto} costa ${this.prezzo} $ `);
+                }
             }
+            console.table(pizza)
+            document.write(pizza.gusto)//specificare l'oggetto
+
+            //lettura di una proprietà
+
+            console.log(pizza.gusto);
+
+            //scrittura
+            pizza.gusto = 'diavola'
+            console.log(pizza.gusto);
+
+
+            //utilizzo metodi
+
+            pizza.mostraPrezzo()
         }
-        console.table(pizza)
-        document.write(pizza.gusto)//specificare l'oggetto
-
-        //lettura di una proprietà
-
-        console.log(pizza.gusto);
-
-        //scrittura
-        pizza.gusto = 'diavola'
-        console.log(pizza.gusto);
 
 
-        //utilizzo metodi
+        //costrutto oggetti , base per ricostruire oggetti
 
-        pizza.mostraPrezzo()
+        {
+            function Pizza(_gusto, _prezzo) {
+                this.gusto = _gusto;
+                this.prezzo = _prezzo;
+                this.mostraPrezzo = function () {
+                    //interpolazione rende dinamica
+                    console.log(`la pizza ${this.gusto} costa ${this.prezzo} $ `);
+                }
+            }
+
+
+            let margherita = new Pizza('Margherita', 5);
+            let diavola = new Pizza('Diavola', 1);
+
+            console.log(margherita);
+            console.log(diavola);
+
+            margherita.mostraPrezzo()
+            diavola.mostraPrezzo()
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
     </script>
 </body>
 
