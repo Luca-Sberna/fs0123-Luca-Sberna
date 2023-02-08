@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+
+        //le funzioni possono richiamarsi anche tra di loro
+        function saluto() {
+            console.log('ciao');
+        }
+
+        saluto();//cosi si lancia la fuznione , si puo invocare anche prima della fase di definizione
+
+
+        function restituisciSaluto() {
+            return 'benvenuto';//restituisce la stringa o dato indicato dal return
+            //ci vuole un solo return per funzione (return termina la funzione)
+            //si usa se hai un dato da estrapolare al di fuori della funzione
+        }
+
+        console.log(restituisciSaluto());
+
+        let stringa = restituisciSaluto();
+
+
+        //scope nelle funzioni
+
+        let a = 0;
+        function scope() {
+            console.log('let a =' + a);// a è raggiungibile perchè globale
+            var b = 100;//b non è raggiungibile dall'esterno,perchè nasce dentro la funzione
+        }
+        scope();
+
+
+        //funzioni parametriche o parametrizzate
+        //i parametri iniziano ella funzione e muoiono finita l'esecuzione
+        function somma(a, b) {
+            console.log(a + b);
+        }
+
+        somma(2, 6);
+        somma(2, 6);
+
+        //alternativa
+        function restituisciSomma(a, b) {
+            return a + b;
+        }
+        console.log(restituisciSomma(3, 9));
+
+
+
+
+
+        //closure
+        //lancianod funzione 1 verrà lanciata funzione 2 contemporaneamente,funzione 1 non può usare le variabili di funzione 2 viceversa si
+        function funzione1() {
+            let a = 100;//raggiungibile da funzione2
+
+            //non posso usarla fuori da funzione1
+            function funzione2() {
+                console.log(a)
+                let x = 3;//non puo essere raggiunta da funzione1
+            }
+            //x non è raggiungibile
+            funzione2()
+        }
+        funzione1()
+
+
+    </script>
+</body>
+
+</html>

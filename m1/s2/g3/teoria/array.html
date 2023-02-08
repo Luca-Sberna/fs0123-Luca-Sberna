@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+    <script>
+        // seconda maniera non usata piu
+        let arrOld = new Array();
+        //metodo usato
+        let arr = [];
+
+
+
+        //un array è una lista di valori correlata tra loro [] , si chiamano indice i valori
+        let numeri = [1, 2, 3, 4, 5, 6]
+        //viene convertito in stringa , formato csv
+
+
+
+
+        let dati = [
+            'stringa',
+            0,
+            true,
+            {},
+            []//cercare di non mettere la virgola se non c'è altro da aggiungere
+        ]
+
+        //lettura di valori in un array
+        let pizze = ['Margherita', 'Diavola', '4 Formaggi'];
+
+        console.log(pizze)
+        console.log(pizze[0])
+
+        // let [p1, p2, p3] = pizze;//assegnamento in destrutturazione,assegna in questo cazo p1=margherita-p2=diavola ecc..
+        let pizza2 = pizze[1];
+        console.log(pizza2);
+
+
+        //scrittura
+        pizze[2] = 'capricciosa';
+        console.log(pizze);
+
+
+        //attenzione evitiamo i buchi
+        //sconsigliato
+        pizze[4] = 'marinara';
+        console.log(pizze);//se si salta o sbaglia il posizionamento dentro gli array
+
+
+        //aggiungere  alla fine dell'array senza creare buchi
+        //push ti restituisce tutti i valori assegnati,let i 
+       /*   let i =*/ pizze.push('Parigina', 'Mimosa');
+        console.log(pizze);
+
+
+
+        //proprietà length//restituisce la lunghezza attuale dell'array 
+        console.log(pizze.length);
+
+        console.log(pizze[pizze.length - 1]);//leggo l'ultimo elemento dell'array
+
+        //length è in comune con le stringhe
+        console.log('ciao'.length);//è comunque sbagliato dire che sono array di caratteri
+
+
+
+        //corretta a persona
+        let persona = {
+            nome: 'Mario',
+            cognome: 'Rossi',
+            anni: 30
+        }
+
+        //oppure per riordinare
+        //attenzione sort non è adatto per riordinare i numeri , li riordina in senso alfabetico
+        let studenti = ['Mauro', 'Vittorio', 'Rebecca']
+        console.log(studenti);
+        studenti.sort()//(riordina in ordine alfabetico)//fa una modifica 
+        console.log(studenti);
+        studenti.reverse()//inverte l'ordine
+        console.log(studenti);
+
+
+
+        //riordinare i numeri
+        let numerati = ['1Mauro', '20Vittorio', '100Rebecca'];
+        numerati.sort(function (a, b) {
+            return a - b;//restituisci tra a e poi b
+        })
+        console.log(numerati);
+
+
+        //VERIFICA SE UN DATO è UN ARRAY
+        Array.isArray(studenti);//restituisce un booleano(true se è un array)
+
+
+
+
+    </script>
+</body>
+
+</html>

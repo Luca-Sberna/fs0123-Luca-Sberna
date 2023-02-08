@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+        //gli oggetti sono liste di valore,ci possono essere tutti i tipi di dato, si chiamano proprietà, e definiscono l'oggetto
+        //
+        var pet = {
+            specie: 'gatto',
+            nome: 'Tigro',
+            colore: 'rosso',
+            anni: 4
+        }
+
+
+        let objOld = new Object();//sconsigliato
+        let obj = {};//si usa questo
+
+        let pizza = {
+            gusto: 'margherita',
+            prezzo: 5,
+            mostraPrezzo: function () {
+                //interpolazione rende dinamica
+                console.log(`la pizza ${this.gusto} costa ${this.prezzo} $ `);
+            }
+        }
+        console.table(pizza)
+        document.write(pizza.gusto)//specificare l'oggetto
+
+        //lettura di una proprietà
+
+        console.log(pizza.gusto);
+
+        //scrittura
+        pizza.gusto = 'diavola'
+        console.log(pizza.gusto);
+
+
+        //utilizzo metodi
+
+        pizza.mostraPrezzo()
+    </script>
+</body>
+
+</html>

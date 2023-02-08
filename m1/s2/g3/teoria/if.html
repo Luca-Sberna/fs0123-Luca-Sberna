@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--  innerHTML è il contenuto da option a /option in questo caso non il valore-->
+<!-- il value ' ' -->
+
+<body>
+    <select id="frutto" onchange="scegliFrutto()">
+        <option value="">---scegli---</option>
+        <option value="mela">Mela</option>
+        <option value="pera">Pera</option>
+        <option value="papaya">Papaya</option>
+        <option value="mango">Mango</option>
+        <option value="kiwi">Kiwi</option>
+    </select>
+    <div id="messaggio"></div>
+
+
+
+
+    <script>
+
+        function scegliFrutto() {
+
+            let frutto = document.getElementById('frutto').value;
+            let messaggio = document.getElementById('messaggio')
+
+            if (frutto == 'mela') {
+                messaggio.textContent = 'le mele costano 1$'
+            } else if (frutto == 'pera') {
+                messaggio.textContent = 'le pere costano 2$'
+            } else if (frutto == 'papaya' || frutto == 'mango') {
+                messaggio.textContent = 'papaya e mango costano troppo'
+            } else {
+                messaggio.textContent = 'non abbiamo ' + frutto
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
