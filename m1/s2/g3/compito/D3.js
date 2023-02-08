@@ -172,13 +172,13 @@ const me = {
 
 
 
-
-
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 
+me.lastName = '';
+console.log(me.lastName);
 
 
 
@@ -188,10 +188,10 @@ const me = {
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
+//da finire
 
-
-
-
+me.skills = '';
+console.log(me.skills);
 
 
 
@@ -200,8 +200,16 @@ const me = {
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
+//da finire
+let numberGroup = [];
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+
+
+
+
+
+
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
