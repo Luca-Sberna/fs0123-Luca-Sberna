@@ -21,6 +21,7 @@
 
 
     <script>
+        //coppia chiave valore = oggetti
 
         let test = document.getElementById('test')
         console.dir(test.textContent);//legge una delle proprieta dell oggetto
@@ -30,7 +31,7 @@
         console.dir(test.textContent);
 
 
-        //per le classi , le classifica come array essendo delel classi,tanti elementi
+        //per le classi , le classifica come array essendo delel classi,tanti elementi,non ciclabile con for each
         let elementi = document.getElementsByClassName('elemento');
 
         elementi[0].textContent = 'ciao'//per scrivere dentro un elemento
@@ -38,6 +39,26 @@
         //per scrivere dentro a piu elementi nell array
         for (let elemento of elementi) {
             elemento.textContent = 'ciao';
+        }//vai in elemento prendi la proprieta textcontent e cambiala in 'ciao'
+
+
+        let divs = document.getElementsByTagName('div');//richiama tutti i div
+
+        divs[0].innerHTML = 'ciao';//per scrivere dentro ogni div
+        //metodo migliore con for off
+        for (let d of divs) {
+            d.innerHTML = 'ciao';
+        }
+
+
+        {
+            //nuovi selettori
+            let test = document.querySelector('#test');//1 solo elemento
+            let primoElemento = document.querySelector('.elemento');//1 elemento
+
+            let tuttiElementi = document.querySelectorAll('.elemento')//sempre 1 array
+
+
         }
 
     </script>

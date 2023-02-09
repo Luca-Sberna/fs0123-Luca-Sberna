@@ -341,6 +341,10 @@ function stampaRandom() {
   const randomNumb = Math.floor(Math.random() * starWarsCharacters.length);
   const randomPers = starWarsCharacters[randomNumb];
 
-  console.log(`Meet ${randomPers.name}, a ${randomPers.gender} from ${randomPers.birth_year}. This character has a mass of ${randomPers.mass}kg and is ${randomPers.height}cm tall.`);
+
+  console.log(`Meet ${randomPers.name} a ${randomPers.gender} from ${randomPers.birth_year} This character has a mass of ${randomPers.mass}kg and is ${randomPers.height}cm tall.`);
 
 }
+stampaRandom()
+
+
