@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <section>
+
+        <div>
+
+            <div>
+                <input type="text" id="display" disabled>
+            </div>
+
+
+            <div>
+                <button data-simbolo="1" onclick="aggiungiTasto(this)">1</button>
+                <button data-simbolo="2" onclick="aggiungiTasto(this)">2</button>
+                <button data-simbolo="3" onclick="aggiungiTasto(this)">3</button>
+            </div>
+
+            <div>
+                <button data-simbolo="4" onclick="aggiungiTasto(this)">4</button>
+                <button data-simbolo="5" onclick="aggiungiTasto(this)">5</button>
+                <button data-simbolo="6" onclick="aggiungiTasto(this)">6</button>
+            </div>
+
+            <div>
+                <button data-simbolo="7" onclick="aggiungiTasto(this)">7</button>
+                <button data-simbolo="8" onclick="aggiungiTasto(this)">8</button>
+                <button data-simbolo="9" onclick="aggiungiTasto(this)">9</button>
+            </div>
+
+            <div id="end-btns">
+                <button onclick="canc()">C</button>
+                <button data-simbolo="0" onclick="aggiungiTasto(this)">0</button>
+                <button onclick="totale()">=</button>
+            </div>
+
+            <div id="operators">
+                <button data-simbolo="+" onclick="aggiungiTasto(this)">+</button>
+                <button data-simbolo="-" onclick="aggiungiTasto(this)">-</button>
+                <button data-simbolo="*" onclick="aggiungiTasto(this)">x</button>
+                <button data-simbolo="/" onclick="aggiungiTasto(this)">:</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
