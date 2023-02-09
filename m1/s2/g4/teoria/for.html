@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+        //alternativa a while molto piu sicura e veloce
+        //unico costrutto che si deve usare il ;
+        //con variabile incrementata
+        let ar = ['lol', 'lul']
+        for (let i = 0; i < ar.length; i++) {
+
+            document.write(ar[i]);
+
+        }
+        //stampare contrario 
+        for (let i = ar.length - 1; i >= 0; i--) {
+
+            document.write(ar[i]);
+
+        }
+
+        //con variabile decrementata
+        for (let i = 9; i >= 0; i--) {
+            document.write(i);
+
+        }
+
+
+        //legato alal lunghezza dell'array
+        let pizze = ['marg', 'diavo', 'marin', 'mimosa'];
+
+        for (let i = 0; i < pizze.length; i++) {
+
+            document.write(`<div> ${pizze[i]} </div> `)
+
+            //debugger , 
+        }
+
+
+        document.write('<hr>');
+        //------------------------------------------------------------------
+
+
+        //per ciclare gli array for non è correttissimo , utilizzare for of , for each
+
+        //for of- per ciclare array
+        pizze = ['marg', 'diavo', 'marin', 'mimosa'];
+
+        for (let pizza of pizze) {//dopo l'of mettere l'array (per ogni pizza dentro pizze)
+            document.write(`<div> ${pizze[i]} </div> `);
+        }
+
+
+        document.write('<hr>');
+        //---------------------------------------------------------------------------
+
+
+        for (let lettera of 'testo') {
+            document.write(lettera + '-');//messo un - dopo ogni lettera
+        }
+
+
+        document.write('<hr>');
+        //---------------------------------------------------------------------------
+
+
+        //for in-per ciclare oggetti
+        {
+            let margherita = {
+                gusto: 'margherita',
+                prezzo: 5
+
+            }
+
+            for (let prop in margherita) {//per ogni proprieta dentro l'oggetto margherita
+
+                document.write(`<div> ${margherita[prop]} </div>`)//mostra il valore
+                document.write(`<div> ${prop} : ${margherita[prop]} </div>`)//mostra sia le proprietà che il valore
+            }
+        }
+
+
+        document.write('<hr>');
+
+
+        {
+            let margherita = {
+                gusto: 'margherita',
+                prezzo: 5,
+                metodo: function () { }
+            }
+            let campiVisualizzabili = ['gusto', 'prezzo']
+
+
+            //per ogni proprieta dentro l'oggetto margherita
+            for (let prop in margherita) {
+
+                if (campiVisualizzabili.includes(prop)) {
+
+
+                    document.write(`<div> ${margherita[prop]} </div>`)//mostra il valore
+                    document.write(`<div> ${prop} : ${margherita[prop]} </div>`)//mostra sia le proprietà che il valore
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+    <script>
+        //il while è un ciclo che possiamo utilizzare per sviluppare qualunque cosa , è il piu generico
+        //hanno una condizione che vinee verificata , il while non prevede una condizione in cui si ferma dobbiamo crearla noi
+        //esecuzione ripetuta per un set di righe
+
+        let i = 0;
+
+        while (i < 100) {//finchè i è inferiore a 100
+            document.write(i);//scrivi a schermo il valore di i
+            i++;//incrementa i di 1
+        }//torna alla riga 25
+
+        //--------------------------------------------------------------
+
+
+        //funzione per settare un lasso di tempo 
+        /* let x = 0;
+        setInterval(function () {
+            x++;
+        }, 1000 //ogni secondo ); */
+
+        //--------------------------------------------------------------
+
+        //esempi con break e continue
+
+        i = 0;//resetto la i a 0
+
+        while (i <= 5) {
+
+            if (i == 2) {
+                i++;
+                continue;//salta alla fase successiva senza fare il resto, break termina il ciclo
+            }
+            document.write(i);
+            i++;
+
+        }
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //per tante condizioni è meglio usare switch 
+        //se è vera la prima nel caso ci fossero solo case , esegue tutte le altre
+        //se le condizioni sono tante e specifiche,cosa devi valutare
+        let frutto = 'kiwy';
+        switch (frutto) {
+            case 'mela':
+                document.write('Le Mele costano');
+                break;
+            case 'pera':
+                document.write('Le Pere costano ');
+                break;
+            case 'ananas':
+            case 'mango':
+                document.write('ananas e mango costano troppo')
+                break;//se le altre non si verificano break riporta fuori l'ultimo valore
+                /* tipo un else */default:
+                document.write('non abbiamo ' + frutto)
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

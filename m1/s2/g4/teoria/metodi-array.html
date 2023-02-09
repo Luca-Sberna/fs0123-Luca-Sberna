@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+        //meno efficente del for of , ma non è un errore
+        //callback quando abbiamo una funzione che potra essere passata come argomento ad un altra funzione, che sara eseguibile in futuro
+        //array.metodo(funzione)
+
+
+        let pizze = ['marg', 'diav', 'marin', 'mimo'];
+
+        //map rielabora tutto l array dividendo in div ogni valore,si usa quando dobbiamo effettuare una modfiica ad ogni elemento dell'array a livello di dati
+        let pizzeDiv = pizze.map(function (valore) {
+            return ` <div>${valore}</div>`
+
+        })
+
+        let numeri = [1, 2, 3, 4, 5, 6];
+        let numeriX2 = numeri.map(function (n) {
+            return n * 2;
+        })
+
+
+
+
+        //for each serve a ciclare gli array
+        pizze.forEach(function (valore) {
+
+            document.write(valore)
+
+        })
+
+
+        //filter,si usa per escludere/mostrare alcuni dati 
+        //restitusici tutti i numeri che sono superiori a 3
+        //filter restituisce sempre un array anche se vuoto
+
+        let numeriFiltrati = numeri.filter(function (n) {
+            return n > 3
+        })
+
+
+        //find
+        //restituisce un solo elemento , il primo che da true (il primo superiore a 3 in questo caso),non un array
+
+        let numeriTrovato = numeri.find(function (n) {
+            return n > 3
+        })
+        //numeri.findIndex oltre a  restituire il primo elemento che da true ti restituisce anche la posizione ovvero l indice all interno dell array,corretto per l uso all intenro di oggetti
+
+        //numeri.every restituisce true se tutti i numeri sono maggiori,minori ecc  del valore che si indica 
+
+        //numeri.some restituisce alcuni degli elementi 
+
+
+
+
+        //reduce,permette di far operazioni di confronto su larga scala
+        //agisce come una sequenza di fibonacci ,mi restituisce la somma dell'array
+        numeri = [1, 2, 3, 4, 5, 6];
+        let somma = numeri.reduce(function (p, c) {
+            return p + c;
+
+        })
+
+        //mi restituisce il numero piu grande in questo caso
+        let numeroGrande = numeri.reduce(function (p, c) {
+            if (p > c) {
+                return p;
+            } else {
+                return c;
+            }
+        })
+
+
+
+
+        //eliminare da un array
+        //andando per esclusione
+        pizze = ['marg', 'diav', 'marin', 'mimo'];
+        pizze = pizze.filter(function (p) {
+            return p != 'mimo';
+        })
+
+        //eliminazione diretta
+        pizze = ['marg', 'diav', 'marin', 'mimo'];
+
+        let indice = pizze.indexOf('marin');//trova la marinara e mi dice il suo indice(posizione)
+
+
+        pizze.splice(indice, 1);//elimina n elementi in base alla quantita indicata
+
+
+
+        //eliminazione da array di oggetti 
+        pizze = [{
+            gusto: 'marg',
+            prezzo: 5,
+            disponibile: true
+        },
+        {
+            gusto: 'diav',
+            prezzo: 1,
+            disponibile: true
+
+        },
+        {
+            gusto: 'hawa',
+            prezzo: 500,
+            disponibile: false
+        }
+        ];
+
+        let index = pizze.findIndex(function (p) {
+            return !p.disponibile
+        })
+        pizze.splice(index, 1);//elimino la pizza
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    //in js è un oggetto
+    <div id="test"> hello </div>
+
+    <div class="elemento"></div>
+    <div class="elemento"></div>
+    <div class="elemento"></div>
+
+
+
+    <script>
+
+        let test = document.getElementById('test')
+        console.dir(test.textContent);//legge una delle proprieta dell oggetto
+
+        //si va a riscrivere
+        test.textContent = 'ciao mondo';
+        console.dir(test.textContent);
+
+
+        //per le classi , le classifica come array essendo delel classi,tanti elementi
+        let elementi = document.getElementsByClassName('elemento');
+
+        elementi[0].textContent = 'ciao'//per scrivere dentro un elemento
+
+        //per scrivere dentro a piu elementi nell array
+        for (let elemento of elementi) {
+            elemento.textContent = 'ciao';
+        }
+
+    </script>
+</body>
+
+</html>
