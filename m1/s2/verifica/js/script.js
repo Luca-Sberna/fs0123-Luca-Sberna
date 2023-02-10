@@ -31,7 +31,10 @@ function totale() {
         display.value = "Errore: risultato non valido!";
 
     }
+
+
 }
+
 
 
 
@@ -44,4 +47,9 @@ function canc() {
     document.querySelector("#display").value = '';
 
 }
+
+
+// prova rotate
+
+
 
