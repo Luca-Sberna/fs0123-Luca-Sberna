@@ -14,45 +14,46 @@
 
     <section>
 
-        <div>
+        <div id="calco">
 
-            <div>
+            <div class="cont-dsp">
                 <input type="text" id="display" disabled>
             </div>
 
+            <div class="colonne">
 
-            <div>
-                <button data-simbolo="1" onclick="aggiungiTasto(this)">1</button>
-                <button data-simbolo="2" onclick="aggiungiTasto(this)">2</button>
-                <button data-simbolo="3" onclick="aggiungiTasto(this)">3</button>
+                <div class="btn">
+                    <button data-simbolo="1" onclick="aggiungiTasto(this)">1</button>
+                    <button data-simbolo="2" onclick="aggiungiTasto(this)">2</button>
+                    <button data-simbolo="3" onclick="aggiungiTasto(this)">3</button>
+                    <button class="oper" data-simbolo="*" onclick="aggiungiTasto(this)">x</button>
+                </div>
+                <div class="btn">
+                    <button data-simbolo="4" onclick="aggiungiTasto(this)">4</button>
+                    <button data-simbolo="5" onclick="aggiungiTasto(this)">5</button>
+                    <button data-simbolo="6" onclick="aggiungiTasto(this)">6</button>
+                    <button class="oper" data-simbolo="-" onclick="aggiungiTasto(this)">-</button>
+                </div>
+                <div class="btn">
+                    <button data-simbolo="7" onclick="aggiungiTasto(this)">7</button>
+                    <button data-simbolo="8" onclick="aggiungiTasto(this)">8</button>
+                    <button data-simbolo="9" onclick="aggiungiTasto(this)">9</button>
+                    <button class="oper" data-simbolo="+" onclick="aggiungiTasto(this)">+</button>
+                </div>
+                <div class="btn">
+                    <button class="oper" onclick="canc()">C</button>
+                    <button data-simbolo="0" onclick="aggiungiTasto(this)">0</button>
+                    <button class="oper" data-simbolo="." onclick="aggiungiTasto(this)">,</button>
+                    <button class="oper" data-simbolo="/" onclick="aggiungiTasto(this)">:</button>
+                </div>
+
+                <hr>
+
+                <div class="tot" class="oper">
+                    <button onclick="totale()">=</button>
+                </div>
+
             </div>
-
-            <div>
-                <button data-simbolo="4" onclick="aggiungiTasto(this)">4</button>
-                <button data-simbolo="5" onclick="aggiungiTasto(this)">5</button>
-                <button data-simbolo="6" onclick="aggiungiTasto(this)">6</button>
-            </div>
-
-            <div>
-                <button data-simbolo="7" onclick="aggiungiTasto(this)">7</button>
-                <button data-simbolo="8" onclick="aggiungiTasto(this)">8</button>
-                <button data-simbolo="9" onclick="aggiungiTasto(this)">9</button>
-            </div>
-
-            <div id="end-btns">
-                <button onclick="canc()">C</button>
-                <button data-simbolo="0" onclick="aggiungiTasto(this)">0</button>
-                <button onclick="totale()">=</button>
-            </div>
-
-            <div id="operators">
-                <button data-simbolo="+" onclick="aggiungiTasto(this)">+</button>
-                <button data-simbolo="-" onclick="aggiungiTasto(this)">-</button>
-                <button data-simbolo="*" onclick="aggiungiTasto(this)">x</button>
-                <button data-simbolo="/" onclick="aggiungiTasto(this)">:</button>
-            </div>
-
-        </div>
 
     </section>
 
