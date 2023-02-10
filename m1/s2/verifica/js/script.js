@@ -28,7 +28,7 @@ function totale() {
             display.value = risultato.toFixed(3);
         }
     } else {
-        display.value = "Errore: risultato non valido!";
+        display.value = "Error:risultato non valido";
 
     }
 
