@@ -140,3 +140,20 @@ button:hover {
 #calco hr {
     border-radius: 100%;
 }
+
+
+
+
+.rotating {
+    animation: rotating 0.5s linear forwards;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

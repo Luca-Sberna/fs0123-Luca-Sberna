@@ -1,19 +1,21 @@
 
 //funzione per l'aggiunta e la visualizzazione dei tasti
 
+let calcolatrice = document.querySelector('#calco');
 
 function aggiungiTasto(elemento) {
 
-
     let simbolo = elemento.getAttribute('data-simbolo');
     let display = document.querySelector('#display');
-    const OPERATORI = ['+', '-', '*', '/', '.'];
+    let operatori = ['+', '-', '*', '/', '.'];
 
 
 
-    if (OPERATORI.includes(simbolo) && OPERATORI.includes(display.value.slice(-1))) {
+    if (operatori.includes(simbolo) && operatori.includes(display.value.slice(-1))) {
         return;
     }
+
+
 
 
 
@@ -51,7 +53,18 @@ function totale() {
     }
 
 
+
+    document.querySelector('#calco').classList.add('rotating');
+
+
+    setTimeout(() => {
+        document.querySelector('#calco').classList.remove('rotating');
+    }, 1000);
 }
+
+
+
+
 
 
 //funzione cancelletto
