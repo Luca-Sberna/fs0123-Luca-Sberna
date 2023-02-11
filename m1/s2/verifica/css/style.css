@@ -27,14 +27,14 @@ section #calco {
 
 
 
-
+/* 
 
 section #calco:hover {
     transform: scale(1.5);
 }
 
 
-
+ */
 
 
 
@@ -155,5 +155,23 @@ button:hover {
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+
+
+.bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
     }
 }

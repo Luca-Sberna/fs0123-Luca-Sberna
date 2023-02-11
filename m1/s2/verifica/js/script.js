@@ -55,12 +55,15 @@ function totale() {
 
 
     document.querySelector('#calco').classList.add('rotating');
-
-
     setTimeout(() => {
         document.querySelector('#calco').classList.remove('rotating');
     }, 1000);
+
+
+
+
 }
+
 
 
 
@@ -73,6 +76,12 @@ function totale() {
 function canc() {
 
     document.querySelector("#display").value = '';
+    document.querySelector('#calco').classList.add('bounce');
+
+
+    setTimeout(() => {
+        document.querySelector('#calco').classList.remove('bounce');
+    }, 1000);
 
 }
 
