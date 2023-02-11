@@ -4,11 +4,27 @@
 
 function aggiungiTasto(elemento) {
 
+
     let simbolo = elemento.getAttribute('data-simbolo');
     let display = document.querySelector('#display');
+    const OPERATORI = ['+', '-', '*', '/', '.'];
+
+
+
+    if (OPERATORI.includes(simbolo) && OPERATORI.includes(display.value.slice(-1))) {
+        return;
+    }
+
+
+
 
     display.value += simbolo;
+
+
 }
+
+
+
 
 
 
@@ -18,7 +34,9 @@ function aggiungiTasto(elemento) {
 function totale() {
 
     let display = document.querySelector('#display');
+
     let risultato = eval(display.value);
+
 
     if (isFinite(risultato)) {
 
@@ -34,9 +52,6 @@ function totale() {
 
 
 }
-
-
-
 
 
 //funzione cancelletto
