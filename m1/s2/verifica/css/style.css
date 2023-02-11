@@ -14,11 +14,11 @@ section #calco {
     border-radius: 16px;
     border: 2.9px solid black;
     display: grid;
-    box-shadow: 4px 4px 6px 2px rgb(157, 157, 157);
+    box-shadow: 4px 4px 8px 2px rgb(157, 157, 157);
     text-align: center;
     background-size: cover;
     background-position: center;
-    transition: all 0.1s;
+    /* transition: all 0.1s; */
 
 }
 

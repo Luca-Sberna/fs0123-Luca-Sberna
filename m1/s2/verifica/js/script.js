@@ -3,6 +3,7 @@
 
 let calcolatrice = document.querySelector('#calco');
 
+
 function aggiungiTasto(elemento) {
 
     let simbolo = elemento.getAttribute('data-simbolo');
@@ -85,8 +86,6 @@ function canc() {
 
 }
 
-
-// prova rotate
 
 
 
