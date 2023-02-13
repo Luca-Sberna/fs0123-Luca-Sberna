@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="ora"></div>
+
+    <script>
+
+        let adesso = new Date();//scrivo nella variabile un oggetto date, contenente le info relative a data ed ora attuali
+
+        console.log(adesso);
+
+        //metodi per la lettura (get)
+
+        let year = adesso.getFullYear();
+        let month = adesso.getMonth();//da zero a 11
+        let weekDay = adesso.getDay();//il numero del giorno della settimana, numeri da 0 a 6. La settimana parte da domenica
+        let day = adesso.getDate();//il giorno del mese sotto forma di numero
+
+        console.log(year, month, day, weekDay);
+
+        adesso.setDate(20);//il 20 del mese
+        adesso.setMonth(-1);
+        //qualora si superasse il numero 11, anche l'anno viene spostato in avanti
+        //il mese 12 è gennaio dell'anno prossimo
+        //lo stesso funzionamento avviene in negativo
+        //il mese -1 è dicembre dell'anno precedente
+
+        console.log(adesso);
+        
+        const options = { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' };
+        console.log(adesso.toLocaleDateString('it-IT', options));
+
+        //consiglio la libreria moment.js per app che fanno ampio utilizzo di date e orari
+
+
+        //eseguo una funzione 1 volta dopo 3 secondi
+        setTimeout(function(){
+            console.log(new Date())
+        },3000);
+
+        //eseguo una funzione all'infinito ogni secondo
+        setInterval(function(){
+            
+            let tag = document.querySelector('#ora');//HTMLelement
+            let orario = new Date().toLocaleTimeString();
+           
+            tag.innerText = orario;
+
+        },1000);
+
+        //coutdown
+
+        let count = 10;
+
+        let timer = setInterval(function(){
+                        console.log(count);//mostro il valore aggiornato
+                        if(count == 0){
+                            clearInterval(timer)//fermo il timer
+                        }
+                        count--;//riduco count di 1
+                    },1000)
+
+
+        //creare date future
+            
+        let now = new Date();
+
+        now.setMonth( now.getMonth() + 1);//ad un mese da oggi
+
+        console.log(now)
+        
+
+    </script>
+</body>
+</html>

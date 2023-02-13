@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let obj = {
+            prop:'prova',
+            objFiglio : {
+                objFiglio: {
+                    valore:true
+                },
+                arrayFiglio : [
+                    1,
+                    2,
+                    3,
+                    {
+                        primoNumero : 1,
+                        secondoNumero : 2
+                    }
+                ]
+            }
+        }
+
+        //leggere una proprietà
+        console.log(obj.prop)
+        //sovrascrivere una proprietà
+        obj.prop = 'Prova2';
+
+        //fare console log della prop valore alla riga 17
+        console.log(obj.objFiglio.objFiglio.valore)
+
+        //fare console log del secondo valore dell'array "arrayFiglio"
+        console.log(obj.objFiglio.arrayFiglio[1]);
+
+        //fare console.log della prop secondoNumero
+        console.log(obj.objFiglio.arrayFiglio[3].secondoNumero);
+
+       
+        //esempio oggetto con sintassi "anomale"
+        let objStrano = {
+            0:'valore',
+            1:'valore',
+            "due parole":'ciao'
+        }
+
+        objStrano['due parole']
+
+
+        //lettura array
+        let arr = [
+            1,
+            3,
+            6,
+            {
+                val1: 7,
+                val2:10,
+                valArr : [7,8,9]
+            },
+            ['a','b','c',['Hello','World!']]
+        ];
+
+        //leggo il numero 6
+        console.log( arr[2] );
+
+        //leggo il 10
+        console.log(arr[3].val2);
+
+        //leggo l'8
+        console.log(arr[3].valArr[1]);
+
+        //leggo la parola world!
+        console.log(arr[4][3][1]);
+
+        /*costruttore oggetti*/
+
+        function Pizza(_gusto,_prezzo){
+            this.gusto = _gusto;
+            this.prezzo = _prezzo;
+        }
+
+        let diavola = new Pizza('Diavola',1);
+        let margherita = new Pizza('Margherita',5);
+        console.log(diavola, margherita);
+
+    </script>
+</body>
+</html>
