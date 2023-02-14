@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="prova"></div>
+    <div class="quadrato"></div>
+
+
+    <section id="area1">
+        <div class="blocco"></div>
+        <div class="blocco"></div>
+        <div class="blocco"></div>
+    </section>
+    <section id="area2">
+        <div class="blocco"></div>
+        <div class="blocco"></div>
+        <div class="blocco"></div>
+    </section>
+
+    <script>
+
+        document.getElementById("prova");//un solo elemento OPPURE NULL
+        document.getElementsByClassName('quadrato')//sempre una lista, non ciclabile con I METODI DEGLI ARRAY
+        document.getElementsByTagName('div')//sempre una lista, non ciclabile con I METODI DEGLI ARRAY
+        
+        //per ottenere un array ciclabile fare così:
+        let listaCiclabile = Array.from( document.getElementsByClassName('quadrato') )
+
+        
+        //nuovi selettori
+        //FUNZIONANO CON QUALSIASI QUERY DI CSS
+        document.querySelector('#prova');//l'elemento con id prova O NULL
+        document.querySelector('.quadrato');//il primo elemento con la classe quadrato O NULL
+
+        //RESTITUISCE SEMPRE UN ARRAY
+        document.querySelectorAll('.quadrato')//tutti gli elementi con la classe quadrato
+        document.querySelectorAll('div')//tutti gli elementi div
+        document.querySelectorAll('div span')//tutti gli elementi span diflgi di un div
+
+
+        document.querySelectorAll('#area1 .blocco')//tutti gli elementi .blocco figli di #area1
+
+        let area1 = document.querySelector('#area1')
+        area1.querySelectorAll('.blocco')//tutti gli elementi blocco nell'elemento selezionato
+
+    </script>
+</body>
+</html>
