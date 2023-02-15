@@ -28,7 +28,7 @@ main section div {
     font-weight: bolder;
 }
 
-main section input[type="text"] {
+main section input {
     width: 70%;
     padding: 10px;
     margin-right: 10px;
