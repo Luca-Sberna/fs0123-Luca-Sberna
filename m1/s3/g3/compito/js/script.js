@@ -1,7 +1,20 @@
+
+//extra
+const icon = '💩';
+const borderDiv = document.querySelector('#contain');
+const emojiDiv = document.createElement('h2');
+emojiDiv.classList.add('logo')
+emojiDiv.innerText = icon;
+borderDiv.insertBefore(emojiDiv, borderDiv.firstChild);
+
+
+
 //variabili base
 const nuovaTaskInput = document.querySelector('#nuova-task');
 const aggiungiTaskBtn = document.querySelector('#aggiungi-task');
 const listeTask = document.querySelector('#task-list');
+
+
 
 //evento aggiungi task
 aggiungiTaskBtn.addEventListener('click', function () {

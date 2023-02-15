@@ -10,6 +10,7 @@ main section h1 {
     border-radius: 30rem;
     text-align: center;
     box-shadow: 2px 5px 2px 2px;
+    cursor: pointer;
 
 }
 
@@ -22,6 +23,9 @@ main section div {
     border-radius: 8rem;
     background-color: rgb(209, 209, 209);
     margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
 main section input[type="text"] {
@@ -42,6 +46,7 @@ main section button {
     cursor: pointer;
     font-weight: bold;
     box-shadow: 2px 2px 2px 2px;
+    border-radius: 3px;
 }
 
 main section ul {
@@ -50,7 +55,6 @@ main section ul {
 }
 
 li {
-    margin-bottom: 10px;
     cursor: pointer;
 }
 
@@ -62,19 +66,24 @@ li {
     border-radius: 3px;
     padding: 6px 12px;
     cursor: pointer;
-    margin-left: 6px;
+    margin: 0 auto;
+    display: flex;
     font-weight: bold;
     box-shadow: 2px 2px 2px 2px;
 
 }
 
-div {
-    margin-bottom: 4rem;
-    font-size: 2rem;
-    font-weight: bolder;
-}
 
 .completed {
     text-decoration: line-through red;
 
+}
+
+
+.logo {
+    /* margin: 0 auto; */
+    font-size: 4rem;
+    text-align: center;
+    max-height: 2rem;
+    margin-top: -2rem;
 }
