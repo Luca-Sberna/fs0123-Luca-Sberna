@@ -86,4 +86,5 @@ li {
     text-align: center;
     max-height: 2rem;
     margin-top: -2rem;
+    cursor: pointer;
 }
