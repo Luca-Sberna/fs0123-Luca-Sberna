@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        {
+
+            /**
+             * Creazione di oggetti manualmente
+            */
+
+            let margherita = {
+                gusto: 'Margherita',
+                prezzo: 5,
+                disponibile: true,
+                mostraPrezzo: function(){
+                    //se uso una funzione freccia this si aggancia all'oggetto window
+                    console.log(this)//tutto l'oggetto margherita
+                    console.log(`Il prezzo della pizza margherita è di ${this.prezzo}€`);
+                }
+            }
+            
+            let diavola = {
+                gusto: 'Diavola',
+                prezzo: 1,
+                disponibile: true,
+                mostraPrezzo: function(){
+                    console.log(this)//tutto l'oggetto diavola
+                    console.log(`Il prezzo della pizza diavola è di ${this.prezzo}€`);
+                }
+            }
+            
+            console.log(margherita);
+            
+            margherita.mostraPrezzo();
+            console.log(margherita.gusto)
+            
+            margherita.prezzo = 4;
+            console.log(margherita.prezzo)
+            margherita.mostraPrezzo();
+
+            
+            diavola.mostraPrezzo();
+            console.log(diavola.gusto)
+
+        }
+
+        {
+
+            /**
+             * costruttore di oggetti
+             * 
+            */
+
+            console.log('=========================================================')
+            console.log('=========================================================')
+            console.log('=========================================================')
+
+            function Pizza(_gusto, _prezzo){
+                this.gusto = _gusto;
+                this.prezzo = _prezzo;
+                this.disponibile = true;
+                this.mostraPrezzo = function(){
+                    console.log(this)//tutto l'oggetto margherita
+                    console.log(`Il prezzo della pizza ${this.gusto} è di ${this.prezzo}€`);
+                }
+            }
+
+            let margherita = new Pizza('Margherita', 5);
+            let diavola = new Pizza('Diavola', 1);
+            console.log(margherita)
+            console.log(diavola)
+
+        }
+
+    </script>
+</body>
+</html>

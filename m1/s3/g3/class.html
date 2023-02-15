@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        //costrutto che ci serve per programmarer con oggetti in maniera dinamica ottimo per tanti oggetti
+        class Pizza {
+            constructor(_gusto, _prezzo) {
+                //constructor è una funzione che viene richiamata quando si instanzia l'oggetto 
+                //class funzione serve per costruire le proprieta dell oggetto e valorizzarle
+
+                this.gusto = _gusto;
+                this.prezzo = _prezzo;
+                this.disponibile = true;
+            }//i metodi si definiscono fuori dal costrutto
+            mostraPrezzo() {
+                console.log(this);
+                console.log(`il prezzo della pizza ${this.gusto} è di ${this.prezzo}$`);
+            }
+
+        }
+
+        let margherita = new Pizza('margherita', 5)
+        console.log(margherita);
+
+        let diavola = new Pizza('diavola', 5)
+        margherita.mostraPrezzo();
+        diavola.mostraPrezzo();
+
+    </script>
+</body>
+
+</html>

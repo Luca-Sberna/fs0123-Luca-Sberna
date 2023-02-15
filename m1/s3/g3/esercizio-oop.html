@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+            
+            class Pizza{
+               
+                constructor(_gusto, _prezzo){
+                    this.gusto = _gusto;
+                    this.prezzo = _prezzo;
+                    this.ponibile = true;
+                    this.qty = 5
+                }
+
+                mostraPrezzo(){
+                    console.log(this)//tutto l'oggetto
+                    console.log(`Il prezzo della pizza ${this.gusto} è di ${this.prezzo}€`);
+                }
+
+                controllaDisp(){
+                    if(this.qty == 0){
+                        this.ponibile = false;
+                    }else{
+                        this.ponibile = true;
+                    }
+                    //this.ponibile = this.qty == 0
+                }
+
+                acquisto(numero){
+                    if(!this.ponibile){//se disp == false
+                        return 'Pizza non disponibile'//termina la funzione
+                    }
+
+                    if(numero <= this.qty){
+                        this.qty -= numero;
+                        this.controllaDisp()
+                    }else{
+                        throw new Error('Quantità non disponibile');
+                    }
+                }
+                
+            }
+
+            let margherita = new Pizza('Margherita',5);
+
+
+            margherita.acquisto(5);
+            console.log(margherita);//ora le pizze sono esaurite
+
+            let risultato = margherita.acquisto(10);//non funziona
+            console.log(risultato)
+
+            
+
+
+            
+
+    </script>
+</body>
+</html>
