@@ -1,0 +1,76 @@
+body {}
+
+
+main section h1 {
+    font-size: 5rem;
+    background: rgb(237, 251, 63);
+    background: radial-gradient(circle, rgba(237, 251, 63, 1) 32%, rgba(217, 169, 37, 1) 51%, rgba(235, 128, 57, 1) 65%, rgba(255, 128, 0, 1) 81%, rgba(255, 59, 0, 1) 91%, rgba(255, 0, 52, 1) 100%);
+    border-radius: 30rem;
+    text-align: center;
+    box-shadow: 2px 5px 2px 2px;
+
+}
+
+.contain-list {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 6px 15px 5px;
+    border-radius: 8rem;
+    background-color: rgb(209, 209, 209);
+}
+
+main section input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 10rem;
+    box-shadow: 2px 2px 2px 2px;
+    border: 1px solid red;
+}
+
+main section button {
+    padding: 10px;
+    font-size: 16px;
+    background: rgb(237, 251, 63);
+    background: radial-gradient(circle, rgba(237, 251, 63, 1) 32%, rgba(217, 169, 37, 1) 51%, rgba(235, 128, 57, 1) 65%, rgba(255, 128, 0, 1) 81%, rgba(255, 59, 0, 1) 91%, rgba(255, 0, 52, 1) 100%);
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+main section ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: rgb(255, 0, 0);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 4%, rgba(255, 154, 0, 1) 16%, rgba(227, 194, 0, 1) 28%, rgba(249, 255, 0, 1) 71%, rgba(255, 154, 0, 1) 85%, rgba(255, 0, 0, 1) 96%);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 3px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-left: 6px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px;
+
+}
+
+div {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.completed {
+    text-decoration: line-through;
+}
