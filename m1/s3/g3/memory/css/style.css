@@ -1,1 +1,20 @@
-#
+#memory{
+    background-color: azure;
+    border: 1px solid #000;
+    height: 500px;
+    width: 500px;
+}
+
+.card{
+    width: calc(100% / 4 - 20px);
+    height: calc(100% / 4 - 20px);
+    margin: 5px;
+    background-color:red;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icona{
+    font-size: 4.5rem;
+    text-align: center;
+}
