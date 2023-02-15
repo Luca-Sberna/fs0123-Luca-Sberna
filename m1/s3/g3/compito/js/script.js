@@ -5,7 +5,6 @@ const listeTask = document.querySelector('#task-list');
 
 //evento aggiungi task
 aggiungiTaskBtn.addEventListener('click', function () {
-
     const nomeTask = nuovaTaskInput.value;
     //se il campo testo è diverso da '' fai partire le funzioni
     if (nomeTask.trim() !== '') {
