@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+            class Pizza{
+                constructor(_gusto, _prezzo){
+                    this.gusto = _gusto;
+                    this.prezzo = _prezzo;
+                    this.ponibile = true;
+                }                
+            }
+
+            let margherita = new Pizza('Margherita',5);
+            let diavola = new Pizza('Diavola',1);
+
+
+            Pizza.prototype.mostraPrezzo = function(){
+                                            console.log(`Il prezzo della pizza ${this.gusto} è di ${this.prezzo}€`);
+                                        }
+
+
+            margherita.mostraPrezzo();
+            diavola.mostraPrezzo();
+
+
+    </script>
+</body>
+</html>

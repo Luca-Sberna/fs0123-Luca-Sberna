@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        console.log('inizio')//sincrona
+
+       let p = new Promise(function(success, error){
+
+            //con setTimeout simuliamo l'attesa di 5 secondi, come se attendessimo risposta dal server
+            setTimeout(function(){
+
+                let rispostaPositiva = false;
+
+                if(rispostaPositiva){
+                    success('Dato arrivato con successo');
+                }else{
+                    error('Non hai il permesso di vedere questo dato')
+                }
+
+
+            },5000);
+
+       });
+
+       //attende che p abbia finito
+       p.then( rispostaSuccesso =>{
+                //quando ha finito scatena questa callback
+
+                console.log(rispostaSuccesso)
+                },
+                rispostaErrore => {
+
+                    console.log(rispostaErrore)
+
+                })
+
+
+       console.log('fine');//sincrona
+
+    </script>
+</body>
+</html>
