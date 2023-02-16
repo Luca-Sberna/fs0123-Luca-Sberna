@@ -1,0 +1,26 @@
+[
+    {
+        "gusto": "Margherita",
+        "prezzo": 5,
+        "ponibile": true,
+        "qty": 5
+    },
+    {
+        "gusto": "Diavola",
+        "prezzo": 1,
+        "ponibile": true,
+        "qty": 5
+    },
+    {
+        "gusto": "Mimosa",
+        "prezzo": 8,
+        "ponibile": true,
+        "qty": 5
+    },
+    {
+        "gusto": "Hawaiana",
+        "prezzo": 50,
+        "ponibile": true,
+        "qty": 5
+    }
+]

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        document.cookie = 'nome=michele';
+        document.cookie = 'cognome=tedesco';
+
+        function scriviCookie(chiave,valore) {
+               var now = new Date();//Date crea un oggetto data contenente data ed ora attuali
+               //now.getMonth()//il mese attuale
+               now.setMonth(  now.getMonth() + 1 );//Alla data attuale aggiungo un mese
+                
+               var scadenza = "expires=" + now.toUTCString();//converto la data nel formato utc, richiesto per il corretto funzionamento del cookie. esempio: Wed, 14 Jun 2017 07:00:00 GMT
+
+               document.cookie = `${chiave}=${valore}; ${scadenza} `;
+                //"mostra_popup=no; expires=Wed, 14 Jun 2050 07:00:00 GMT;'
+        }
+
+        scriviCookie('visitatore_nuovo','no');
+
+
+        console.log(document.cookie)
+
+    </script>
+</body>
+</html>

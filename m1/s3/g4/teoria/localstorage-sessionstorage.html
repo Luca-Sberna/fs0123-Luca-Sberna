@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        localStorage.setItem('nome','gianluca');
+        let nomeSalvato = localStorage.getItem('nome')
+        console.log(nomeSalvato)
+        
+        
+        sessionStorage.setItem('cognome','Praticò');
+        let cognomeSalvato = sessionStorage.getItem('cognome')
+        console.log(cognomeSalvato)
+
+
+        class Pizza{       
+               constructor(_gusto, _prezzo){
+                   this.gusto = _gusto;
+                   this.prezzo = _prezzo;
+                   this.ponibile = true;
+                   this.qty = 5
+               }
+               metodo(){
+
+               }
+        }
+
+        let pizze = [
+            new Pizza('Margherita',5),
+            new Pizza('Diavola',1),
+            new Pizza('Mimosa',8),
+            new Pizza('Hawaiana',50)
+        ]
+
+        localStorage.setItem('menu',JSON.stringify(pizze))
+
+
+        let pizzeSalvate = localStorage.getItem('menu')
+
+        JSON.parse(pizzeSalvate).forEach(element => {
+            console.log(element.gusto)
+        });
+
+    </script>
+</body>
+</html>

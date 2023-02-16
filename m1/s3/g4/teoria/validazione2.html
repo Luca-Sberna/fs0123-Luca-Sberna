@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <form id="mioForm">
+
+        <div>
+            <input type="text" id="nome" required class="notEmpty" placeholder="Nome">
+            <span class="error"></span>
+        </div>
+        <div>
+            <input type="text" id="cognome" placeholder="Cognome">
+            <span class="error"></span>
+        </div>
+        <div>
+            <input type="text" id="email" required pattern="[a-z0-9]{2,10}@[a-z0-9]{2,10}.[a-z]{2,6}" class="notEmpty" placeholder="Email">
+            <span class="error"></span>
+        </div>
+        <div>
+            <input type="password" id="password" class="notEmpty" placeholder="Password">
+            <span class="error"></span>
+        </div>
+        <button type="button" id="show">Mostra/nascondi</button>
+
+        <button id="send">Iscriviti</button>
+    </form>
+
+
+    <script>
+
+        let formBtn = document.getElementById("send");
+
+        formBtn.addEventListener('click', function (e) {
+            
+            e.preventDefault()
+
+            let nome = document.getElementById('nome');
+            let cognome = document.getElementById('cognome');
+            let email = document.getElementById('email');
+            let password = document.getElementById('password');
+
+            console.log(nome.checkValidity(), nome.validationMessage, nome.validity)
+            console.log(cognome.checkValidity(), cognome.validationMessage, cognome.validity)
+            console.log(email.checkValidity(), email.validationMessage, email.validity)
+            console.log(password.checkValidity(), password.validationMessage, password.validity)
+
+        })
+
+
+        //funzionalità mostra password
+        let show = document.getElementById("show");
+        show.addEventListener('click', function (e) {
+            let password = document.getElementById('password');
+            password.type = (password.type == 'password') ? 'text' : 'password';
+        })
+
+
+    </script>
+</body>
+
+</html>

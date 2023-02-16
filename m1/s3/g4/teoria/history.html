@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :target{
+            background-color: red;
+            color: white;            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <a href="#contenuto1">Target1</a>
+    <a href="#contenuto2">Target2</a>
+    <a href="#contenuto3">Target3</a>
+
+
+    <p id="contenuto1">lorem ipsum 1</p>
+    <p id="contenuto2">lorem ipsum 2</p>
+    <p id="contenuto3">lorem ipsum 3</p>
+
+
+    <button onclick="history.go(-3)">indietro di 3</button>
+    <button onclick="history.back()">indietro</button>
+    <button onclick="history.forward()">avanti</button>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        class Pizza{       
+               constructor(_gusto, _prezzo){
+                   this.gusto = _gusto;
+                   this.prezzo = _prezzo;
+                   this.ponibile = true;
+                   this.qty = 5
+               }
+               metodo(){
+
+               }
+        }
+
+        let pizze = [
+            new Pizza('Margherita',5),
+            new Pizza('Diavola',1),
+            new Pizza('Mimosa',8),
+            new Pizza('Hawaiana',50)
+        ]
+
+        console.log(pizze)
+
+        //convertire in json string
+        let jsonString = JSON.stringify(pizze);
+
+        console.log(jsonString)
+        console.log(typeof jsonString)
+
+
+        //convertire json string  in oggetto/array
+
+        let object = JSON.parse(jsonString)
+        console.log(object)
+
+    </script>
+</body>
+</html>

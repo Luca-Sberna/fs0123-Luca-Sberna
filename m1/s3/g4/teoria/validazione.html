@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <form id="mioForm">
+
+        <div>
+            <input type="text" id="nome" class="notEmpty" placeholder="Nome">
+            <span class="error"></span>
+        </div>
+        <div>
+            <input type="text" id="cognome" placeholder="Cognome">
+            <span class="error"></span>
+        </div>
+        <div>
+            <input type="email" id="email" class="notEmpty" placeholder="Email">
+            <span class="error"></span>
+        </div>
+        <div>
+            <input type="password" id="password" class="notEmpty" placeholder="Password">
+            <span class="error"></span>
+        </div>
+        <button type="button" id="show">Mostra/nascondi</button>
+
+        <button id="send">Iscriviti</button>
+    </form>
+
+
+    <script>
+
+        let formBtn = document.getElementById("send");
+
+        formBtn.addEventListener('click', function (e) {
+            e.preventDefault();//blocca i funzionamenti predefiniti
+
+            let campi = document.querySelectorAll('#mioForm .notEmpty');
+            //let [,,password] = campi;
+            let valid = true;
+            
+
+            campi.forEach(campo =>{
+                if (!campo.value) {
+                    campo.nextElementSibling.textContent = 'Devi inseririre ' + campo.placeholder 
+                    valid = false;
+                }else{
+                    campo.nextElementSibling.textContent = ''
+                }
+            })
+
+            if (valid) {
+                //invio il form
+            }
+
+        })
+
+        let show = document.getElementById("show");
+        show.addEventListener('click', function (e) {
+            let password = document.getElementById('password');
+            password.type = (password.type == 'password') ? 'text' : 'password';
+        })
+
+        /*
+        VERSIONE SEMPLICE
+        formBtn.addEventListener('click', function (e) {
+            e.preventDefault();//blocca i funzionamenti predefiniti
+
+            let nome = document.getElementById('nome');
+            let cognome = document.getElementById('cognome');
+            let email = document.getElementById('email');
+            let password = document.getElementById('password');
+            
+
+            let valid = true;
+
+            if (!nome.value) {
+                nome.nextElementSibling.textContent = 'Devi inseririre il ' + nome.placeholder 
+                valid = false;
+            }else{
+                nome.nextElementSibling.textContent = ''
+            }
+            if (!cognome.value) {
+                cognome.nextElementSibling.textContent = 'Devi inseririre il ' + cognome.placeholder 
+                valid = false;
+            }else{
+                cognome.nextElementSibling.textContent = ''
+
+            }
+            if (!email.value) {
+                email.nextElementSibling.textContent = 'Devi inseririre l\' ' + email.placeholder 
+                valid = false;
+            }else{
+                email.nextElementSibling.textContent = ''; 
+
+            }
+            if (!password.value) {
+                password.nextElementSibling.textContent = 'Devi inseririre la ' + password.placeholder 
+                valid = false;
+            }else{
+                password.nextElementSibling.textContent = '';
+
+            }
+
+            if (valid) {
+                //invio il form
+            }
+
+        })*/
+
+    </script>
+</body>
+
+</html>

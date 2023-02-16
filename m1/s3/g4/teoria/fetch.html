@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        fetch('menu.json')//solo chiamate get
+        //il primo fetch riceverà un risultato contenente le info sulla richiesta
+        .then(res => res.json())
+        .then(res => console.log(res) )
+
+        /*
+        fetch(url,{
+            method:'POST',
+            data: JSON.stringify(dato)
+        })
+        */
+
+
+
+        //gestione multiple chiamate
+        
+        async function getData(){
+            //let pizze = await fetch('menu.json').then(res => res.json());//10 sec
+            //let utenti = await fetch('utenti.json').then(res => res.json());//60
+
+            let [pizze, utenti] = await Promise.all([
+                fetch('menu.json').then(res => res.json()),//10 sec
+                fetch('utenti.json').then(res => res.json())//20 sec
+            ])//20
+
+            console.log(pizze, utenti)
+        }
+
+    </script>
+
+</body>
+</html>
