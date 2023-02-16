@@ -194,7 +194,7 @@
     */
 
     const inputField = document.getElementById('input-field')
-    inputField.addEventListener('click', function () {
+    inputField.addEventListener('input', function () {
       console.log(inputField.value);
     });
 
@@ -202,10 +202,10 @@
      Crea un messaggio di benvenuto con un alert quando la pagina ha finito di caricarsi.
     */
 
-    window.onload = async function () {
-      await new Promise(resolve => setTimeout(resolve, 3000));
+    window.onload = function () {
       alert('ha caricato la pagina grazie ciao!');
     };
+
   </script>
 </body>
 
