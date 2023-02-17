@@ -36,9 +36,9 @@ function start() {
         card.classList.add = ('card');
         icona.classList.add = ('icona');
 
-        icona.textContent = el;
+        icona.textContent = el; card.addEventListener('click', () => {
 
-        card.addEventListener('click', () => {
+
             icona.classList.add('selected');
         })
 
