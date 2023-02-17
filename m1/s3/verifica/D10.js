@@ -439,23 +439,30 @@ console.log(years);
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
 
+function onlyInLastMillennium() {
+  const currentYear = new Date().getFullYear();
+  const lastMillenniumStart = currentYear - 100;
+  const lastMillenniumFinish = currentYear - 23;
+  const moviesLastMillennium = movies.filter(movies => {
+    return movies.Year >= lastMillenniumStart && movies.Year < lastMillenniumFinish;
+  });
+  return moviesLastMillennium;
+}
+console.log(onlyInLastMillennium());
 
 
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
-
 function sumAllTheYears(movies) {
-  let sum = 0;
-  for (let i = 0; i < movies.length; i++) {
-    let year = parseInt(movies[i].year);
-    if (!isNaN(year)) {
-      sum += year;
-    }
-  }
+  const sum = movies.reduce((acc, movie) => {
+    const year = parseInt(movies.Year);
+    return isNaN(year) ? acc : acc + year;
+  }, 0);
   return sum;
 }
-console.log((sumAllTheYears(movies)));
+console.log(sumAllTheYears(movies));
+
 
 
 
@@ -463,21 +470,48 @@ console.log((sumAllTheYears(movies)));
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
 
-function searchByTitle() {
-  let risultato = '';
-  return movies.filter(movie => movie.Title.includes(risultato));
+/* function searchByTitle(str) {
+  return movies.filter(movie => movies.Title.includes(str));
 }
-let risultato = searchByTitle('Star');
-console.log(risultato);
+
+console.log(searchByTitle('Star')); */
+
+
+
+
 
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
 
+function searchAndDivide(str) {
+  const match = movies.filter(movie => movie.Title.toLowerCase().includes(str.toLowerCase()));
+  const unmatch = movies.filter(movie => !movie.Title.toLowerCase().includes(str.toLowerCase()));
+  return { match, unmatch };
+}
+
+let result = searchAndDivide('Star');
+console.log(result.match);
+console.log(result.unmatch);
+
+
+
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
+
+
+/* function removeIndex(i,num) {
+  movies.splice(i, 1);
+  return movies;
+}
+console.log(removeIndex()); */
+
+
+
+
+
 
 
 
