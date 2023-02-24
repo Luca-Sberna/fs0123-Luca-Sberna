@@ -1,0 +1,435 @@
+@font-face {
+    font-family: "Outfit";
+    src: url("https://fonts.googleapis.com");
+    src: url("https://fonts.gstatic.com");
+    src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+}
+
+body {
+    background-image: url("../assets/img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.divConteiner {
+    /* padding: 2rem 19rem; */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+
+
+.logo {
+    width: 18%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    margin: 4rem 7rem auto;
+    max-width: 25rem;
+    font-family: "Outfit", sans-serif;
+}
+
+h1 span {
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 40px;
+    color: white;
+    width: 50%;
+    color: rgb(248, 54, 248);
+    font-weight: bold;
+    margin-left: 7rem;
+    margin-top: 3rem;
+    font-family: "Outfit", sans-serif;
+}
+
+.parag {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+.button {
+    color: black;
+    line-height: 3rem;
+    font-weight: bold;
+    padding: 0 45px;
+    background: #00ffff;
+    border: none;
+    font-size: large;
+    display: flex;
+    box-shadow: 2px 2px 29px 2px aqua;
+    float: right;
+    /* margin-right: 5rem;
+    margin-top: 4rem; */
+    cursor: pointer;
+}
+
+button:hover {
+    color: black;
+    background: #00ffff;
+    filter: drop-shadow(0 0 20px #00ffff) contrast(5) brightness(5);
+}
+
+.container-check {
+    width: 85%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 auto;
+    padding-top: 6rem;
+}
+
+input {
+    border: 3px solid white;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    margin: 0 auto;
+    background-color: blue;
+    cursor: pointer;
+}
+
+label {
+    margin-left: 1rem;
+    font-family: "Inter", sans-serif;
+}
+
+/*css lista*/
+
+.lista {
+    margin-left: 9rem;
+    /*numero approssimativo*/
+    color: #fff;
+    font-size: 16px;
+    margin-top: 1.2rem;
+    list-style-type: disc;
+    font-family: "Inter", sans-serif;
+}
+
+li span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+legend {
+    font-family: "Outfit", sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+
+fieldset div label {
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+}
+
+.timer_container {
+    color: white;
+    text-align: right;
+    margin: 2rem 2rem;
+}
+
+#myChart {
+    max-width: 30rem;
+    max-height: 30rem;
+    border-radius: 100%;
+}
+
+.divCanvas {
+    max-width: 60rem;
+    max-height: 60rem;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.titleChart {
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: bold;
+    color: white;
+    padding-top: 3rem;
+}
+
+.paragChart {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: white;
+    font-family: "Outfit", sans-serif;
+}
+
+.percentCorrect,
+.percentUncorrect {
+    color: white;
+    font-size: 60px;
+    font-family: "Outfit", sans-serif;
+    margin: 0 auto;
+}
+
+.percentCorrect h3,
+.percentUncorrect h3 {
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+
+}
+
+.percentCorrect p,
+.percentUncorrect p {
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.btnChart {
+    font-weight: bold;
+    color: white;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    background: none;
+    padding: 1rem 3.5rem;
+    cursor: pointer;
+}
+
+/* Domande e risposte */
+input[type="radio"] {
+    opacity: 0;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10rem; */
+}
+
+.answer_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 100px;
+}
+
+.answer_container div:hover {
+    background-color: #900090;
+}
+
+.answer_container div {
+    background-color: rgb(35, 41, 79, 0.4);
+    height: 50px;
+    width: 360px;
+    border-radius: 40px;
+    text-align: center;
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+}
+
+.answer_container>div {
+    flex: 50%;
+    box-shadow: 0px -3px 8px rgb(255, 255, 255);
+    flex: 0 0 calc(50% - 70px);
+    /* la larghezza è 50% meno il margine negativo */
+    margin-bottom: 40px;
+}
+
+legend {
+    margin-top: 30px;
+    text-align: center;
+    margin: 80px auto 0px auto;
+}
+
+.answer_container div label {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.percentUncorrect {
+    padding-top: 8rem;
+
+}
+
+
+.percentCorrect {
+    padding-top: 8rem;
+}
+
+#position {
+    text-align: center;
+    margin-right: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+
+}
+
+.white {
+    color: white;
+}
+
+.questionSpan {
+    color: #c2128d
+}
+
+
+/* titolo nella pagina feedback*/
+
+.h1 {
+    margin-top: 4em;
+    margin: 0 auto;
+    max-width: 50rem;
+    display: flex;
+    justify-content: center;
+}
+
+/*paragrafo pagina feedback*/
+
+.p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5rem;
+    margin-left: 25%;
+}
+
+.pValutazione {
+    color: white;
+    font-size: 20px;
+    margin-top: 5rem;
+    font-family: "Inter", sans-serif;
+    margin-left: 30%;
+    margin-bottom: 2em;
+}
+
+/*Stelline*/
+.stars {
+    margin: 0 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.stars ul {
+    list-style-type: none;
+}
+
+.star {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 1%;
+}
+
+.starColorHover {
+    filter: invert(95%) sepia(69%) saturate(2346%) hue-rotate(103deg) brightness(100%) contrast(107%);
+}
+
+/* input */
+.inputText {
+    margin: 0;
+    margin-left: 27%;
+    margin-top: 1em;
+}
+
+.inp {
+    width: 60%;
+    height: 2em;
+    font-size: large;
+    cursor: text;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-bottom: 0.2em solid #c2128d;
+}
+
+.inp::placeholder {
+    padding-left: 1em;
+}
+
+/* BOTTONE PAGINA FEEDBACK */
+
+#moreInfoPosition {
+    margin-right: 44%;
+    margin-top: 7em;
+}
+
+/* TIMER */
+#circle {
+    stroke-dasharray: 315px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: #00ffff;
+    fill: none;
+}
+
+.timer_container {
+    margin: 0 auto;
+    top: 25px;
+    right: 20px;
+
+}
+
+.container {
+    margin: 0 auto;
+    /* height: 100vh; */
+    margin-top: 5rem;
+}
+
+
+
+
+.text-inside-circle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+#number-inside-circle {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.remaining-text {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
