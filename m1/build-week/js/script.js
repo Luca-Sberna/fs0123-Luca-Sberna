@@ -362,16 +362,17 @@ function createBenchPage() {
         isTimerRunning = false; // imposta la variabile a false per indicare che il Timer è stato fermato
     }
 
-    // crea logo e sfondo
-    /* createImg(); */
 
     // se si arriva all'ultima domanda passare a pagina dei risultati
     // altrimenti si stampa una nuova domanda
 
-    indexDomanda === domandeRandom.length ? displayResult() : printQuiz();
     let questPos = document.createElement('div')
     questPos.id += 'position'
     questPos.innerHTML = `<span class="white">QUESTION ${conteggioDomande}</span><span class="questionSpan">/ ${domandeRandom.length}</span>`
+    if (conteggioDomande > domandeRandom.length) {
+        questPos = '';
+    }
+    indexDomanda === domandeRandom.length ? displayResult() : printQuiz();
 
     divConteiner.appendChild(questPos)
 }

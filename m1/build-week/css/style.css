@@ -209,13 +209,14 @@ fieldset div label {
     font-weight: bold;
     color: white;
     display: flex;
-    margin: 0 auto;
-    margin-top: 4rem;
+    margin: 2rem auto;
     font-size: 1.2rem;
     border: 2px solid white;
     background: none;
     padding: 1rem 3.5rem;
     cursor: pointer;
+
+
 }
 
 /* Domande e risposte */
@@ -287,9 +288,8 @@ legend {
 
 #position {
     text-align: center;
-    margin-right: 2.5rem;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+    margin: 0 auto;
+
 
 }
 
