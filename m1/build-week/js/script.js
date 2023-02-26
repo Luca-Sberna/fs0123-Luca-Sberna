@@ -420,7 +420,7 @@ function displayResult() {
     text1.id = 'number-inside-circle';
     let text2 = document.createElement('p');
     text2.classList.add('remaining-text');
-    divConteiner.append(textInsideCircle);
+    tag.append(textInsideCircle);
     textInsideCircle.append(text1);
     textInsideCircle.append(text2);
 
@@ -572,10 +572,10 @@ function displayResult() {
     let res1 = (Math.round(correctAnswers / domandeRandom.length * 100)).toFixed(2);
     let res2 = (Math.round(uncorrectAnswers / domandeRandom.length * 100)).toFixed(2);
     correctLabel.textContent = data.labels[0];
-    percent1.textContent = `${res1} %`;
+    percent1.textContent = `${res1}%`;
     correctNum.textContent = `${correctAnswers}\/${domandeRandom.length} questions`;
     uncorrectLabel.textContent = data.labels[1];
-    percent2.textContent = `${res2} %`;
+    percent2.textContent = `${res2}%`;
     uncorrectNum.textContent = `${uncorrectAnswers}\/${domandeRandom.length} questions`;
 
     if (res1 >= 60) {
@@ -604,7 +604,6 @@ function displayResult() {
                 legend: {
                     display: false,
                 },
-                centerText: 'ciao',
                 tooltip: {
                     enabled: false,
                 },

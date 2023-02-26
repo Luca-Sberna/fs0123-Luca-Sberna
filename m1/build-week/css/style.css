@@ -163,6 +163,7 @@ fieldset div label {
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
+    text-align: center;
 }
 
 .titleChart {
@@ -187,6 +188,7 @@ fieldset div label {
     font-size: 60px;
     font-family: "Outfit", sans-serif;
     margin: 0 auto;
+
 }
 
 .percentCorrect h3,
@@ -194,6 +196,8 @@ fieldset div label {
     color: white;
     font-weight: bold;
     margin: 0 auto;
+    text-align: center;
+    width: 7rem;
 
 }
 
@@ -278,12 +282,14 @@ legend {
 
 .percentUncorrect {
     padding-top: 8rem;
+    text-align: center;
 
 }
 
 
 .percentCorrect {
     padding-top: 8rem;
+    text-align: center;
 }
 
 #position {
@@ -427,9 +433,13 @@ legend {
 #number-inside-circle {
     font-size: 1.8rem;
     font-weight: 700;
+    color: #c2128d;
+
 }
 
 .remaining-text {
     font-weight: 400;
     font-size: 1.2rem;
+    color: #00ffff;
+    cursor: pointer;
 }
