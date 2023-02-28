@@ -22,10 +22,12 @@ hr {
   border: 1px solid white;
   border-radius: 10px;
   font-size: 1rem;
-  padding: 0.2rem 0.7rem;
+  padding: 0.4rem 0.9rem;
   background-color: rgba(255, 255, 255, 0.398);
   cursor: pointer;
-  backdrop-filter: blur(10px)
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 2px 2px 2px rgb(168, 168, 168);
+  margin-block: 1rem;
 }
 
 .container-icon {
@@ -33,13 +35,17 @@ hr {
   right: -10px;
   bottom: 0;
   z-index: 2;
-
+  margin-top: 2rem;
+  margin-inline: 1rem;
 }
 
 #social {}
 
 #calendar {}
 
+#scroll {
+  margin-bottom: 1rem;
+}
 
 
 /* rimuove l'elemento */
@@ -503,5 +509,6 @@ footer a {
   #scroll {
     position: absolute;
     bottom: 0;
+
   }
 }
