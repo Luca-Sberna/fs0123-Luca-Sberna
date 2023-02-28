@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box sizing tests</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .box {
+            width: 50%;
+            height: 200px;
+            display: inline-block;
+            margin-inline: -2px;
+            padding: 24px;
+            box-sizing: border-box;
+            overflow: auto;
+            vertical-align: middle;
+        }
+
+        .aqua {
+            background-color: aqua;
+        }
+
+        .coral {
+            background-color: coral;
+        }
+
+        span {
+            background-color: black;
+            color: white;
+            width: 50%;
+            display: inline-block;
+            margin-inline: -2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box aqua">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores est similique maxime,
+        perspiciatis provident culpa, deserunt aliquid soluta quasi libero quaerat excepturi esse aperiam corrupti autem
+        architecto, sequi nemo accusamus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos porro velit
+        laudantium illo expedita aspernatur tempore quam fuga, soluta, laboriosam consectetur excepturi suscipit
+        voluptas? Praesentium sed nulla consectetur hic ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo amet corporis officiis tenetur dignissimos, aut nesciunt nulla maiores culpa quis accusamus excepturi ab
+        iste veniam eaque obcaecati hic nemo natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nihil
+        eligendi veniam, fuga fugiat doloremque dolore, rem quaerat et minus omnis ipsam, beatae doloribus praesentium.
+        Error commodi perspiciatis et officia.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos porro velit
+        laudantium illo expedita aspernatur tempore quam fuga, soluta, laboriosam consectetur excepturi suscipit
+        voluptas? Praesentium sed nulla consectetur hic ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo amet corporis officiis tenetur dignissimos, aut nesciunt nulla maiores culpa quis accusamus excepturi ab
+        iste veniam eaque obcaecati hic nemo natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nihil
+        eligendi veniam, fuga fugiat doloremque dolore, rem quaerat et minus omnis ipsam, beatae doloribus praesentium.
+        Error commodi perspiciatis et officia.</div>
+    <div class="box coral">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores est similique maxime,
+        perspiciatis provident culpa, deserunt aliquid soluta quasi libero quaerat excepturi esse aperiam corrupti autem
+        architecto, sequi nemo accusamus. </div>
+
+
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, voluptatem!</span>
+    <span>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, voluptatem!</span>
+
+
+</body>
+
+</html>
