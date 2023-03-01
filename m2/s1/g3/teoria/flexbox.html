@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container {
+            max-width: 900px;
+            margin-inline: auto;
+            background-color: aliceblue;
+            margin-bottom: 24px;
+
+            display: flex;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .antique {
+            background-color: antiquewhite;
+        }
+
+        .aqua {
+            background-color: aqua;
+        }
+
+        .coral {
+            background-color: coral;
+        }
+
+        .crimson {
+            background-color: crimson;
+        }
+
+        #n2 {
+            flex-direction: row-reverse
+        }
+
+        #n3 {
+            min-height: 60vh;
+            flex-direction: column;
+        }
+
+        #n4 {
+            min-height: 60vh;
+            flex-direction: column-reverse;
+        }
+
+        #n5 {
+            min-height: 40vh;
+            flex-wrap: wrap;
+        }
+
+        #n6 {
+            min-height: 40vh;
+            flex-wrap: wrap-reverse;
+        }
+
+        #n7 {
+            min-height: 40vh;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            gap: 16px;
+        }
+
+
+        /* al posto di usare margini oggi si usano i gap */
+        /* #n7 .box {
+            margin-inline-end: 16px;
+            margin-block-end: 8px;
+        } */
+
+        #n8,
+        #n9 {
+            justify-content: center;
+        }
+
+        #n9 {
+            min-height: 60vh;
+            flex-direction: column;
+        }
+
+        #n10 {
+            min-height: 40vh;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        #n11 {
+            flex-direction: column;
+            min-height: 60vh;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        #n12 {
+            min-height: 60vh;
+            align-items: baseline;
+            justify-content: center;
+            padding-block: 7rem;
+            gap: 20px;
+        }
+
+        #n12 .box {
+            height: unset;
+            background-color: unset;
+        }
+
+        #n12 img {
+            max-width: 100%;
+        }
+
+
+        #n15 {
+            min-height: 60vh;
+        }
+
+        #n15 .box {
+            flex-shrink: 0;
+            flex-grow: 1;
+            height: unset;
+        }
+
+        #n15 .box.aqua {
+            width: 300px;
+            flex-shrink: 5;
+            flex-grow: 5;
+            background-image: url(https://source.unsplash.com/random/600x800);
+            background-size: cover;
+            background-position: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Flex default</h2>
+    <div id="n1" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box coral">3</div>
+        <div class="box crimson">4</div>
+    </div>
+
+    <h2>Flex row-reverse</h2>
+    <div id="n2" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box coral">3</div>
+        <div class="box crimson">4</div>
+    </div>
+
+    <h2>Flex column</h2>
+    <div id="n3" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box coral">3</div>
+        <div class="box crimson">4</div>
+    </div>
+
+    <h2>Flex column-reverse</h2>
+    <div id="n4" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box coral">3</div>
+        <div class="box crimson">4</div>
+    </div>
+
+    <h2>Flex wrap</h2>
+    <div id="n5" class="container">
+        <div class="box antique">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, atque!</div>
+        <div class="box aqua">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, atque!</div>
+        <div class="box coral">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, atque!</div>
+        <div class="box crimson">4</div>
+        <div class="box antique">6</div>
+        <div class="box aqua">7</div>
+        <div class="box coral">8</div>
+        <div class="box crimson">9</div>
+    </div>
+
+    <h2>Flex wrap-reverse</h2>
+    <div id="n6" class="container">
+        <div class="box antique">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, atque!</div>
+        <div class="box aqua">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, atque!</div>
+        <div class="box coral">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, atque!</div>
+        <div class="box crimson">4</div>
+        <div class="box antique">6</div>
+        <div class="box aqua">7</div>
+        <div class="box coral">8</div>
+        <div class="box crimson">9</div>
+    </div>
+    <h2>Flex wrap + align-content</h2>
+    <div id="n7" class="container">
+        <div class="box antique">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, atque!</div>
+        <div class="box aqua">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, atque!</div>
+        <div class="box coral">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, atque!</div>
+        <div class="box crimson">4</div>
+        <div class="box antique">6</div>
+        <div class="box aqua">7</div>
+        <div class="box coral">8</div>
+        <div class="box crimson">9</div>
+    </div>
+
+    <h2>Justify-content in row</h2>
+    <div id="n8" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box coral">3</div>
+        <div class="box crimson">4</div>
+    </div>
+
+    <h2>Justify-content in column</h2>
+    <div id="n9" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box coral">3</div>
+        <div class="box crimson">4</div>
+    </div>
+
+    <h2>Justify-content + align-items in row</h2>
+    <div id="n10" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box coral">3</div>
+        <div class="box crimson">4</div>
+    </div>
+
+    <h2>Justify-content + align-items in column</h2>
+    <div id="n11" class="container">
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box coral">3</div>
+        <div class="box crimson">4</div>
+    </div>
+
+    <h2>align-items baseline</h2>
+    <div id="n12" class="container">
+        <!-- <div class="box antique"><span>titolo</span></div>
+        <div class="box aqua" style="font-size: 1.6rem;"><span>titolo</span></div>
+        <div class="box coral" style="font-size: .9rem;"><span>titolo</span></div>
+        <div class="box crimson" style="font-size: 2.8rem;"><span>titolo</span></div> -->
+
+        <div class="box antique">
+            <img src="./assets/imgs/502px-Logo_of_YouTube_(2015-2017).svg.webp" alt="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quo
+            exercitationem, corporis sint illo reprehenderit perspiciatis eligendi dicta suscipit voluptatum recusandae
+            odit, omnis voluptas alias ea iusto quod ipsam non.
+        </div>
+        <div class="box aqua">
+            <img src="./assets/imgs/600px-Instagram_icon.png" alt="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quo
+            exercitationem, corporis sint illo reprehenderit perspiciatis eligendi dicta suscipit voluptatum recusandae
+            odit
+        </div>
+        <div class="box coral">
+            <img src="./assets/imgs/Facebook_Logo_(2019).png" alt="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+        <div class="box crimson">
+            <img src="./assets/imgs/Twitter-logo.svg.png" alt="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quo
+            exercitationem, corporis sint illo reprehenderit perspiciatis eligendi dicta suscipit voluptatum recusandae
+            odit, omnis voluptas alias ea iusto quod ipsam non.
+        </div>
+    </div>
+
+    <h2>Flex-items: order</h2>
+    <div id="n13" class="container">
+        <!-- con order: -1 un elemento va direttamente in prima posizione -->
+        <div class="box antique" style="order: 4">1</div>
+        <div class="box aqua" style="order: 3">2</div>
+        <div class="box coral" style="order: 1">3</div>
+        <div class="box crimson" style="order: 2">4</div>
+    </div>
+
+    <h2>Flex-items: order</h2>
+    <div id="n14" class="container">
+        <!-- con order: -1 un elemento va direttamente in prima posizione -->
+        <div class="box antique">1</div>
+        <div class="box aqua">2</div>
+        <div class="box coral">3</div>
+        <div class="box crimson">4</div>
+    </div>
+    <h2>Flex-items: grow & shrink</h2>
+    <div id="n15" class="container">
+        <!-- con order: -1 un elemento va direttamente in prima posizione -->
+        <div class="box antique">1</div>
+        <div class="box aqua"></div>
+        <div class="box coral">3</div>
+        <div class="box crimson">4</div>
+    </div>
+</body>
+
+</html>

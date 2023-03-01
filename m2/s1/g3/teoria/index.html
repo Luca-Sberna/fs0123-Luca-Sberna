@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex examples</title>
+
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin-inline: auto;
+            padding: 2rem;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul li {
+            flex-shrink: 0;
+        }
+
+        nav {
+            background-color: #cdcdcd;
+            color: white;
+            padding: 0.5rem 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        nav button {
+            margin-left: auto;
+        }
+
+        .card {
+            border: 1px solid #d6d6d6;
+            display: flex;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .card-img {
+            background-color: crimson;
+            font-size: 2rem;
+            color: white;
+            min-width: 80px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .card p {
+            padding-inline: 1rem;
+            flex: 999 1 0;
+            min-width: 300px;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+
+
+        .col {
+            flex-basis: 100%;
+            min-width: 100%;
+        }
+
+
+        @media screen and (max-width: 767px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav button {
+                margin-left: unset;
+                margin-inline: auto;
+            }
+        }
+
+        @media screen and (max-width: 499px) {
+            ul {
+                row-gap: 6px;
+            }
+
+            ul li {
+                text-align: center;
+                flex-basis: 33.333%;
+            }
+
+            /* .card {
+                flex-direction: column;
+            }
+
+            .card-img {
+                order: 1;
+            } */
+
+        }
+
+        @media screen and (min-width: 500px) {
+            ul {
+                gap: 20px;
+            }
+
+            .col {
+                flex-basis: 50%;
+                min-width: 50%;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .col {
+                flex-basis: 25%;
+                min-width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+
+        <img src="http://127.0.0.1:5501/assets/imgs/502px-Logo_of_YouTube_(2015-2017).svg.webp" alt="" height="40">
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+        </ul>
+
+
+        <button>Click me</button>
+    </nav>
+    <div class="container">
+
+        <div class="card">
+            <div class="card-img">7</div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, neque dolore harum porro aliquam,
+                voluptatibus deserunt dignissimos illo quos est fugiat nemo! Dignissimos at nesciunt soluta! Veniam
+                quidem suscipit minus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eveniet,
+                deserunt
+                ratione, aspernatur dolorum, voluptate esse illum magni quibusdam earum laborum est! Nobis ratione
+                quae
+                sunt facere impedit rem adipisci.
+                Voluptatibus omnis cum vero aliquid, libero officia voluptatum sit ea dignissimos tempore veniam,
+                iste
+                explicabo soluta perferendis sed quod excepturi. Excepturi ex quisquam eveniet sunt doloribus minima
+                nam, incidunt voluptatem!
+                Beatae odit repudiandae aperiam, earum fugiat minus odio magnam ab alias, ea, neque aspernatur?
+                Dolores
+                qui, error non architecto totam, debitis aliquid voluptates, minima nobis accusamus ducimus aperiam
+                ipsam voluptate.</p>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h3>Griglia responsive (restringi la pagina)</h3>
+        <div class="grid">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maxime? Earum sed adipisci
+                    laboriosam
+                    blanditiis? Pariatur ut, aperiam ratione veniam animi eius esse, accusantium ad blanditiis illum id
+                    sequi
+                    voluptatum?</p>
+            </div>
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maxime? Earum sed adipisci
+                    laboriosam
+                    blanditiis? Pariatur ut, aperiam ratione veniam animi eius esse, accusantium ad blanditiis illum id
+                    sequi
+                    voluptatum?</p>
+            </div>
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maxime? Earum sed adipisci
+                    laboriosam
+                    blanditiis? Pariatur ut, aperiam ratione veniam animi eius esse, accusantium ad blanditiis illum id
+                    sequi
+                    voluptatum?</p>
+            </div>
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maxime? Earum sed adipisci
+                    laboriosam
+                    blanditiis? Pariatur ut, aperiam ratione veniam animi eius esse, accusantium ad blanditiis illum id
+                    sequi
+                    voluptatum?</p>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
