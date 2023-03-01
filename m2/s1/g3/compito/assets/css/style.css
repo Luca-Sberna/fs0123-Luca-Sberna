@@ -1,0 +1,325 @@
+body {
+    margin: 0 auto;
+}
+
+#nav {
+    display: flex;
+    border-radius: 5rem;
+    background-color: rgb(255, 252, 224);
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 13rem;
+    padding: 1rem;
+    margin-block: 1rem;
+    margin-inline: 0.5rem;
+}
+
+header img {
+    max-width: 40px;
+    margin-inline: 1rem;
+    vertical-align: middle;
+}
+
+#first-link {
+    order: -1;
+    flex-grow: 6;
+    text-transform: uppercase;
+    padding: 1.5rem 3.4rem;
+    font-size: 1.5rem;
+    flex-basis: 100%;
+    flex-shrink: 3;
+}
+
+.nav-link {
+
+    border-radius: 3rem;
+    padding: 0.7rem 1.2rem;
+    background-color: rgb(244, 224, 8);
+    text-align: center;
+    margin-block: auto;
+    color: brown;
+    font-weight: bold;
+    flex-basis: 33%;
+    max-width: 20rem;
+    margin-inline: 3px;
+}
+
+/* header */
+@media screen and (min-width:575px) {
+    #nav {
+        display: flex;
+        border-radius: unset;
+        margin: unset;
+        flex-wrap: unset;
+        padding: unset;
+        height: unset;
+        padding: 1.5rem 0;
+
+    }
+
+    .nav-link {
+        flex-basis: unset;
+        flex-shrink: 0;
+
+    }
+
+    #first-link {
+        display: flex;
+        order: unset;
+        flex-basis: unset;
+        padding: 1rem 9px;
+        flex-shrink: 1;
+        font-size: 1.4rem;
+        justify-content: center;
+    }
+
+    header img {
+        margin-inline: 5px;
+        max-width: 35px;
+    }
+}
+
+@media screen and (min-width:767px) {
+
+    body {
+        display: flex;
+    }
+
+    header {
+        background-color: rgb(255, 252, 224);
+    }
+
+    #nav {
+        display: flex;
+        flex-direction: column;
+        margin-block: 2rem;
+        background-size: cover;
+        background-color: unset;
+    }
+
+    #first-link {
+        padding: 1.5rem 1.5rem;
+        order: -1;
+
+    }
+
+    .nav-link {
+        margin-block: 0.5rem;
+        padding: unset;
+        padding: 2rem 2rem;
+        margin-inline: 2rem;
+    }
+
+    header img {
+        margin-right: 1rem;
+    }
+
+}
+
+
+
+main h1 {
+    text-align: center;
+    width: 15rem;
+    margin-inline: auto;
+    color: brown;
+    font-weight: bold;
+}
+
+
+main .card {
+
+    flex-basis: 100%;
+    border-radius: 2rem;
+    margin-block: 0.4rem;
+    margin-inline: 0.3rem;
+    background-color: rgb(255, 252, 224);
+    padding: 0 0 1rem 0;
+}
+
+main .card img {
+    max-width: 100%;
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+}
+
+main .description {
+
+    color: brown;
+    max-width: 80%;
+    display: flex;
+    text-align: center;
+
+}
+
+main .description b {
+    font-size: 18px;
+    display: flex;
+}
+
+main .description .price {
+    display: flex;
+    color: brown;
+    font-weight: bold;
+    padding-top: 0.5rem;
+
+
+}
+
+main .btn {
+    display: flex;
+    border-radius: 3rem;
+    padding: 0.5rem 1.2rem;
+    background-color: rgb(244, 224, 8);
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+    flex-direction: column;
+    width: 40%;
+    color: brown;
+    margin-inline: auto;
+
+}
+
+/* cards */
+@media screen and (min-width:575px) {
+
+    main h1 {
+        width: unset;
+        text-align: unset;
+        margin-left: 1rem;
+        font-size: 2.5rem;
+
+    }
+
+    .cards {
+        margin-left: 3.5rem;
+        max-width: 100%;
+    }
+
+    .card {
+        width: 44%;
+        display: inline-block;
+        margin-block: unset;
+        margin-inline: unset;
+
+    }
+
+}
+
+@media screen and (min-width:767px) {
+
+    .cards {
+
+        display: flex;
+        margin-left: unset;
+    }
+
+    .card {
+        flex-wrap: wrap;
+        padding: unset;
+        margin-inline: unset;
+        margin: unset;
+        display: inline-block;
+        flex-basis: unset;
+    }
+
+
+
+    main .card img {
+        /*  min-width: 8rem; */
+    }
+
+    main .description {
+        font-size: 11px;
+        max-width: 100%;
+        /* margin-inline: 0.1rem; */
+
+    }
+
+    main .description b {
+        font-size: 13px;
+        display: flex;
+    }
+
+    main .description .price {
+        padding-top: 1.2rem;
+        margin-right: 8px;
+        font-size: 12px;
+
+    }
+
+    main .btn {
+        width: 4.9rem;
+        font-size: 14px;
+        padding: 0.4rem 0.2rem;
+    }
+
+}
+
+
+main h2 {
+    text-align: center;
+    margin-inline: auto;
+    color: brown;
+    font-weight: bold;
+
+
+}
+
+/* h box */
+@media screen and (min-width:575px) {
+    main h2 {
+        margin-inline: 1rem;
+        text-align: unset;
+        font-size: 2rem;
+    }
+}
+
+.box {
+    padding: 0.2rem 1.5rem;
+    background-color: rgb(255, 252, 224);
+    border-radius: 3rem;
+    margin-inline: 1rem;
+
+
+}
+
+.box h3,
+p {
+    color: brown;
+    margin-inline: auto;
+}
+
+.box img {
+    display: flex;
+    max-width: 98%;
+    margin-inline: auto;
+    margin-block: auto;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+/* box  */
+
+@media screen and (min-width:1030px) {
+    .box {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .box img {
+        margin-right: 1rem;
+        width: 49%;
+        margin-block: unset;
+        padding-top: 2rem;
+        height: unset;
+
+    }
+
+    .box div {
+
+        width: 50%;
+    }
+
+}
