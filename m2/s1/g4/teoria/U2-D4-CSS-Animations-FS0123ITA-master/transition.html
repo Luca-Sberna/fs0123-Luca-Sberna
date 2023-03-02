@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
+    <style>
+        body {
+            min-height: 300vh;
+        }
+
+        h3,
+        p {
+            margin: 0.25rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin-inline: auto;
+        }
+
+        .rectangle {
+            width: 300px;
+            padding: 1rem 3rem;
+            background-color: palevioletred;
+            transition-property: width;
+            transition-duration: 1000ms;
+        }
+
+        .rectangle:hover {
+            width: 1000px;
+        }
+
+        .rectangle#n2 {
+            background-color: palegoldenrod;
+        }
+
+        .rectangle#n2:hover {
+            transition-property: width;
+            transition-duration: 2s;
+            /* transition-delay: 1s; */
+        }
+
+        .rectangle#n3 {
+            background-color: peru;
+            transition-timing-function: linear;
+        }
+
+        .rectangle#n4 {
+            background-color: green;
+            transition-timing-function: ease-in;
+        }
+
+        .rectangle#n5 {
+            background-color: crimson;
+            transition-property: width, background-color;
+            transition-timing-function: ease-out;
+        }
+
+        .rectangle#n5:hover {
+            background-color: rgb(255, 153, 0)
+        }
+
+        .rectangle#n6 {
+            background-color: aqua;
+            transition-timing-function: ease-in-out;
+        }
+
+        .rectangle#n7 {
+            background-color: rgb(255, 153, 0);
+            transition-duration: 400ms;
+            transition-timing-function: cubic-bezier(1, .11, .77, 1);
+        }
+
+        button {
+            background-color: hsl(207, 52%, 78%);
+            margin-top: 2rem;
+            border: 1px solid #ebebeb;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            border-radius: 6px;
+            transform: translateY(0) scale(1);
+            box-shadow: 0 3px 10px -2px rgb(0 0 0 / 20%);
+            /* transition: box-shadow 300ms, background-color 300ms, transform 300ms; */
+            transition: all 300ms;
+        }
+
+
+        button:hover {
+            box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+            transform: translateY(-3px) scale(1.01);
+            background-color: white;
+        }
+
+        .font-big {
+            font-size: 2rem;
+        }
+
+        .card {
+            display: inline-block;
+            margin-top: 5rem;
+            border: 1px solid #ebebeb;
+            overflow: hidden;
+            border-radius: 12px;
+            max-width: 400px;
+        }
+
+        .card-body {
+            /* padding: 1rem; */
+            height: 0;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .card-body h3,
+        .card-body p,
+        .card-body button {
+            opacity: 0;
+
+        }
+
+        /* .card-body h3 {
+            transition-delay: 0.4s;
+        }
+
+        .card-body p {
+            transition-delay: 0.5s;
+        }
+
+        .card-body button {
+            transition-delay: .6s;
+        } */
+
+        .card .card-img img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .card-img {
+            position: relative;
+        }
+
+        .card-img::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: transparent;
+            transition: background-color 500ms;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 70px;
+            font-size: 4rem;
+            font-family: arial;
+            font-weight: 900;
+            color: white;
+            letter-spacing: -4px;
+            opacity: 0.9;
+
+            transform: translateX(-220px);
+            transition: transform 300ms;
+        }
+
+        .card:hover .text-overlay {
+            /* verrà applicata sul testo solo quando la card riceverà l'hover */
+            transform: translateX(0);
+
+        }
+
+        .card:hover .card-img::before {
+            background-color: rgba(0, 0, 0, 0.2);
+
+        }
+
+        .card:hover .card-body {
+            padding: 1rem;
+            height: 200px;
+            transition: all 0.5s;
+        }
+
+        .card:hover .card-body h3,
+        .card:hover .card-body p,
+        .card:hover .card-body button {
+            opacity: 1;
+            transition: opacity 0.6s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Transitions</h1>
+        <div class="rectangle" id="n1">Transition base (ease)</div>
+        <div class="rectangle" id="n2">Transition con ingresso lento e uscita veloce</div>
+        <div class="rectangle" id="n3">Transition lineare</div>
+        <div class="rectangle" id="n4">Transition ease-in</div>
+        <div class="rectangle" id="n5">Transition ease-out</div>
+        <div class="rectangle" id="n6">Transition ease-in-out</div>
+        <div class="rectangle" id="n7">Transition custom timing function</div>
+
+        <button onClick="handleClick(event)" style=" margin-top: 4rem;">Click me</button>
+
+        <div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1677612968800-4d9f1104d251?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        alt="">
+
+                    <p class="text-overlay">Hiking</p>
+                </div>
+
+                <div class="card-body">
+                    <h3 style="transition-delay: 0.4s;">Titolo</h3>
+                    <p style="transition-delay: 0.5s;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                        natus incidunt rerum nobis enim
+                        commodi
+                        saepe in. Vitae dolore illo nulla et, libero blanditiis aliquam nesciunt corrupti, officia quod
+                        quia?
+                    </p>
+                    <button style="transition-delay: 0.6s;">See more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const handleClick = (event) => {
+            event.target.classList.toggle("font-big")
+        }
+    </script>
+</body>
+
+</html>

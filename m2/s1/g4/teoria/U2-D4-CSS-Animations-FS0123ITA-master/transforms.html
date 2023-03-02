@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+
+    <style>
+        .container {
+            max-width: 1200px;
+            margin-inline: auto;
+
+        }
+
+        .rectangle {
+            width: max-content;
+            padding: 1rem 3rem;
+            /* background-color: palevioletred */
+        }
+
+        #n1 {
+            background-color: palegoldenrod;
+            transform: rotate(20deg);
+            transform-origin: bottom right;
+        }
+
+        #n2 {
+            background-color: palegoldenrod;
+            transform: rotateX(40deg);
+            transform-origin: bottom;
+        }
+
+        #n3 {
+            background-color: palegoldenrod;
+            transform: rotateY(60deg);
+        }
+
+        #n4 {
+            background-color: palegoldenrod;
+            transform: rotateZ(100deg)
+        }
+
+        #n5 {
+            background-color: palegreen;
+            transform: skew(100deg)
+        }
+
+        #n6 {
+            background-color: palegreen;
+            transform: skewX(235deg)
+        }
+
+        #n7 {
+            background-color: palegreen;
+            transform: skewY(15deg)
+        }
+
+        #n8 {
+            background-color: palevioletred;
+            transform: scale(1.1)
+        }
+
+        #n9 {
+            background-color: palevioletred;
+            transform: scaleX(2.3)
+        }
+
+        #n10 {
+            background-color: palevioletred;
+            transform: scaleY(2)
+        }
+
+        #n11 {
+            background-color: paleturquoise;
+            transform: translate(20px, 10px)
+        }
+
+        #n12 {
+            background-color: paleturquoise;
+            transform: translateX(400px)
+        }
+
+        #n13 {
+            background-color: paleturquoise;
+            transform: translateY(-30px)
+        }
+
+        #n14 {
+            background-color: paleturquoise;
+            transform: perspective(1000px) translateZ(30px)
+        }
+
+        #n15 {
+            background-color: paleturquoise;
+            transform: perspective(1000px) translate3d(0, 0, 45px)
+        }
+
+        #n16 {
+            background-color: palegoldenrod;
+            transform: perspective(1000px) rotate3d(0, 1, 0, 45deg)
+        }
+
+        #n17 {
+            background-color: palevioletred;
+            transform: perspective(1000px) rotate3d(0, 1, 0, 45deg) scale3d(1, 1, 1);
+            transform-style: preserve-3d;
+        }
+
+
+        #n17 div:first-of-type {
+            background-color: darkcyan;
+            transform: perspective(1000px) rotate3d(0, 1, 0, 90deg)
+        }
+
+        #n17 div:nth-of-type(2) {
+            background-color: darkorchid;
+            transform: perspective(1000px) rotate3d(0, 1, 0, -45deg)
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Transform - Rotate</h2>
+        <div id="n1" class="rectangle">Rotate</div>
+
+        <h2>Transform - Rotate</h2>
+        <div id="n2" class="rectangle">Rotate X</div>
+
+        <h2>Transform - Rotate</h2>
+        <div id="n3" class="rectangle">Rotate Y</div>
+
+        <h2>Transform - Rotate</h2>
+        <div id="n4" class="rectangle">Rotate Z</div>
+
+        <h2>Transform - Skew</h2>
+        <div id="n5" class="rectangle">Skew</div>
+
+        <h2>Transform - Skew</h2>
+        <div id="n6" class="rectangle">Skew X</div>
+
+        <h2>Transform - Skew</h2>
+        <div id="n7" class="rectangle">Skew Y</div>
+
+        <h2>Transform - Scale</h2>
+        <div id="n8" class="rectangle">Scale</div>
+
+        <h2>Transform - Scale</h2>
+        <div id="n9" class="rectangle">Scale X</div>
+
+        <h2>Transform - Scale</h2>
+        <div id="n10" class="rectangle">Scale Y</div>
+
+        <h2>Transform - Translate</h2>
+        <div id="n11" class="rectangle">Translate</div>
+
+        <h2>Transform - Translate</h2>
+        <div id="n12" class="rectangle">Translate X</div>
+
+        <h2>Transform - Translate</h2>
+        <div id="n13" class="rectangle">Translate Y</div>
+
+        <h2>Transform - Translate</h2>
+        <div id="n14" class="rectangle">Translate Z</div>
+
+        <h2>Transform - Translate</h2>
+        <div id="n15" class="rectangle">Translate 3d</div>
+
+        <h2>Transform - Rotate3d</h2>
+        <div id="n16" class="rectangle">Rotate3d</div>
+
+        <h2>Transform - Scale3d</h2>
+        <div id="n17" class="rectangle">Scale3d
+
+            <div>child1</div>
+            <div>child2</div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
