@@ -80,17 +80,20 @@ body {
   opacity: 0.5;
   animation: wind 80s linear infinite reverse;
 }
+
 .cloud:nth-of-type(2) {
   width: 300px;
   top: 0;
   animation: wind 50s linear infinite reverse;
 }
+
 /*// KEYFRAMES //*/
 
 @keyframes drive {
   from {
     transform: translateX(-200px);
   }
+
   to {
     transform: translateX(3000px);
   }
@@ -100,6 +103,7 @@ body {
   from {
     left: -300px;
   }
+
   to {
     left: 100%;
   }
@@ -109,9 +113,11 @@ body {
   0% {
     top: -40px;
   }
+
   50% {
     top: -100px;
   }
+
   100% {
     top: -40px;
   }
