@@ -1,0 +1,6 @@
+@use "sass:map";
+$custom_themes: (
+  "beige": #ffeeda,
+);
+
+$theme-colors: map.merge($theme-colors, $custom_themes);

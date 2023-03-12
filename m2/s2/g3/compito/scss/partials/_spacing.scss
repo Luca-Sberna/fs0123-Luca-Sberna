@@ -1,0 +1,12 @@
+$sizes: ('sm': 0px, 'normal': 0.25rem, 'md':0.5rem, 'lg':1rem, 'xl':1.5rem, 'xxl':3rem);
+$directions: 'block', 'inline';
+
+@mixin spacing($directions,$sizes,$type:'padding'){
+    @each $direction in $directions {
+        @each $name, $val in $sizes {
+            .#{$type}-#{$direction}-#{$name}{
+                #{$type}-#{$direction}: $val
+            }
+        }
+    }
+}

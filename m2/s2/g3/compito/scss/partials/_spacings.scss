@@ -1,0 +1,41 @@
+$padding-default: 20px;
+$margin-default: 0 auto;
+
+$sizes: (
+  sm: 12px,
+  normal: 16px,
+  md: 24px,
+  lg: 36px,
+  xl: 48px,
+  xxl: 160px
+);
+
+@mixin generate-padding($direction: null) {
+  @each $size, $value in $sizes {
+    .padding-#{$direction}-#{$size} {
+      @if $direction {
+        padding-#{$direction}: $value;
+      } @else {
+        padding: $value;
+      }
+    }
+  }
+}
+
+@mixin generate-margins($direction: null) {
+  @each $size, $value in $sizes {
+    .margin-#{$direction}-#{$size} {
+      @if $direction {
+        margin-#{$direction}: $value;
+      } @else {
+        margin: $value;
+      }
+    }
+  }
+}
+
+@include generate-padding(inline);
+@include generate-padding(block);
+
+@include generate-margins(inline);
+@include generate-margins(block);

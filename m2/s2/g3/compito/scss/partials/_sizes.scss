@@ -1,0 +1,14 @@
+$font-size-small: 12px;
+$font-size-normal: 16px;
+$font-size-medium: 24px;
+$font-size-large: 48px;
+$font-size-xl: 96px;
+
+@mixin title-big {
+  font-size: $font-size-xl;
+  font-weight: 900;
+  letter-spacing: -6px;
+  line-height: 0.95;
+  margin-bottom: 1rem;
+  color: darken($hero-color, 25);
+}

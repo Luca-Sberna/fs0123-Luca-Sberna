@@ -1,0 +1,87 @@
+@import "resets";
+@import "colors";
+@import "fonts";
+@import "sizes";
+@import "spacings";
+@import "positions";
+@import "animations";
+@import "buttons";
+@import "mixins";
+
+body {
+  background-color: $light-color;
+  font-family: $font-default;
+  line-height: 1.6;
+}
+
+.showcase {
+  background-color: $hero-color;
+  min-height: 600px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+    li {
+      padding: 15px;
+    }
+    a {
+      color: $light-color;
+    }
+    a:hover {
+      color: $secondary-color;
+    }
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    img {
+      @include floating(16px, 0 16px 36px rgb(0 0 0 / 0.3), 2px solid lighten($hero-color, 30));
+      @include animate-from-top(1s, -100%, 20%, 800ms);
+      width: 50%;
+    }
+    h1 {
+      @include title-big;
+      @include animate-from-top(1s, 10px, 0, 300ms);
+    }
+    p {
+      @include animate-from-top(1s, 10px, 0, 600ms);
+      color: lighten($hero-color, 40);
+      font-size: $font-size-medium;
+      line-height: 1.6;
+      letter-spacing: 1px;
+      padding-inline-end: 3rem;
+    }
+    button:first-of-type {
+      @include animate-from-top(1s, 10px, 0, 800ms);
+    }
+    button:nth-of-type(2) {
+      @include animate-from-top(1s, 10px, 0, 900ms);
+    }
+    button:last-of-type {
+      @include animate-from-top(1s, 10px, 0, 1000ms);
+    }
+  }
+}
+
+main {
+  position: relative;
+
+  .line-4 {
+    @include grid(4);
+    div {
+      padding-inline: 0.5rem;
+      img {
+        width: 100%;
+        @include floating;
+      }
+    }
+  }
+}
